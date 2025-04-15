@@ -96,7 +96,6 @@ So yeah, expect some quirks, sass, and maybe even bugs — but it’s all part o
 
 📜 Legal Disclaimer:
 This bot is a fan-made project inspired by the character Katsuki Bakugo from *My Hero Academia*. I do not own or claim any rights to *My Hero Academia*, its characters, or related content. All rights belong to their respective owners. This project is non-commercial and made for educational and entertainment purposes only. 
-**## Image Use Disclaimer
 
 ## 📸 Image Use Disclaimer
 
