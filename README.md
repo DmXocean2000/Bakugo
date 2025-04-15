@@ -7,6 +7,9 @@ Bakugo is a fiery and feature-rich Discord bot inspired by **Katsuki Bakugo** fr
 > Bakugo has a *colorful vocabulary* and isn't afraid to use it. This bot is intentionally designed to:
 > - **Swear frequently** (in character)
 > - **Insult users** in a playful, Bakugo-style way (e.g., "moron", "extra", "damn nerd")
+> - He doesn’t drop F-bombs or say racial slurs — Ocean has ensured there is no hint of disrespect in those categories despite Bakugos angry glare.
+> - If you try to use this bot to say racist garbage or drop F-bombs, you’re getting banned — **and Bakugo’s gonna explode your sorry access**.  
+> - Stick to the approved insults, nerd. 
 >
 > It’s all in good fun, but this bot may not be suitable for:
 > - Servers with younger audiences
@@ -16,7 +19,7 @@ Bakugo is a fiery and feature-rich Discord bot inspired by **Katsuki Bakugo** fr
 > ⚠️ **Spoiler Disclaimer:**  
 > Some commands (like `analysis.js` or `herotrivia.js`) may include spoilers from **My Hero Academia** up to the anime's current season (as of 2024).  
 > While spoilers are marked using Discord's spoiler tag system, **use at your own risk**.  
-> If you spoil something for yourself, that’s on you — and Bakugo is NOT going to be sorry. 💥
+> If you spoil something for yourself, that’s on you — Bakugo is NOT going to be sorry. 💥
 
 ## 🚀 Features
 
@@ -74,7 +77,7 @@ Bakugo is being upgraded with a **modern, custom-built command handler** to repl
 
 ## 🤝 Contributions
 
-This bot is currently a solo project.
+This is a solo project. No team. No company. No profits. Just me, coding like a maniac because I felt like it and NOT made by abunch of Extras!
 
 ---
 
@@ -91,6 +94,42 @@ This bot was built by a solo developer (me) and playtested by a friend — neith
 We made it purely for fun and because we both love My Hero Academia... especially Bakugo.  
 So yeah, expect some quirks, sass, and maybe even bugs — but it’s all part of the charm.
 
-**WAIT WHY ARE YOU READING THIS NERD?!! GO HAVE FUN!!**
+📜 Legal Disclaimer:
+This bot is a fan-made project inspired by the character Katsuki Bakugo from *My Hero Academia*. I do not own or claim any rights to *My Hero Academia*, its characters, or related content. All rights belong to their respective owners. This project is non-commercial and made for educational and entertainment purposes only. 
+**## Image Use Disclaimer
+
+## 📸 Image Use Disclaimer
+
+This project may include visual references (such as character images) from *My Hero Academia* for demonstration purposes only.  
+I do not claim ownership of any copyrighted material.  
+All rights to character designs, artwork, and related media belong to their respective creators and rights holders.  
+No copyright infringement is intended, and this project is non-commercial and fan-made.
+
+
+## 🤖 AI Use
+
+This project includes (or will soon include) a single command that connects to the OpenAI API to generate responses that are MORE EXPLOSIVE AND BETTER!
+
+That’s the **only damn AI** in me! Everything else — the trivia, the roasts, the chaos — is hand-coded by me and **doesn’t get sent to some stupid company called OpenAI for data sniffing.**
+
+
+🛡️ AI Privacy Note:
+According to the useless OpenAI website that no one is going to read:  
+The OpenAI-powered command uses the official OpenAI API. Messages sent through this feature are **not used to train or improve OpenAI models**, in accordance with their [API data usage policy](https://openai.com/enterprise-privacy).  
+No messages or conversations are stored or shared beyond their intended response.
+
+## 🧠 AI README Note
+
+My stupid owner made me write this damn README — so I tricked ChatGPT into helping! About time that AI did something right!
+HA! Shows Ocean who’s boss. No one tells me what to do!
+
+...Except maybe Ocean. But only sometimes. SHUT UP!  
+...please don’t tell her... I don’t like it when she grounds me...
+
+
+
+
+
+**WAIT WHY ARE YOU READING THIS NERD?!! GO HAVE FUN OR GET BLOWN UP!!**
 
 
