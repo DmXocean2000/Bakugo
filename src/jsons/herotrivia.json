@@ -1,0 +1,2097 @@
+[
+    {
+        "id": 0,
+        "question": "In which city did the first human quirk appear?",
+        "correctAnswer": "Qing Qing",
+        "options": [
+            "Qing Qing",
+            "Tokyo",
+            "Haikou",
+            "beijing"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "what is the name of the training plan All Might prepared for Izuku Midoriya",
+        "correctAnswer": "The American dream plan",
+        "options": [
+            "The American dream plan",
+            "To the stars plan",
+            "High school success plan",
+            "The Ulimate plan"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "How long was Izuku Midoriya's training plan?",
+        "correctAnswer": "9 months",
+        "options": [
+            "9 months",
+            "6 months",
+            "3 months",
+            "10 months"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What did Izuku Midoriya eat to inherit one for all?",
+        "correctAnswer": "Hair",
+        "options": [
+            "Hair",
+            "tears",
+            "Blood",
+            "Sweat"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "What is the main quirk that Izuku Midoriya knew he inherited from All Might?",
+        "correctAnswer": "One for all",
+        "options": [
+            "Bestow",
+            "One for all",
+            "BlackWhip",
+            "Float"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "What was the quirk that All Might gained?",
+        "correctAnswer": "Bestow",
+        "options": [
+            "Bestow",
+            "One for all",
+            "BlackWhip",
+            "Float"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "What was the name of the quirk that Nana Shimura gave to One for All?",
+        "correctAnswer": "Float",
+        "options": [
+            "Danger Sense",
+            "Gearshift",
+            "BlackWhip",
+            "Float"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "Izuku midoriya was the (blank) holder of one for all",
+        "correctAnswer": "9th",
+        "options": [
+            "10th",
+            "6th",
+            "8th",
+            "9th"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "What was the younger Shigaraki's brother first name. The one that was killed by All for one",
+        "correctAnswer": "Yoichi",
+        "options": [
+            "Yoichi",
+            "Daigoro",
+            "Hikage",
+            "Toshinori"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "How many points did Izuku Midoriya obtain in the fighting portion of the entry exam?",
+        "correctAnswer": "0",
+        "options": [
+            "60",
+            "0",
+            "30",
+            "15"
+        ]
+    },
+    {
+        "id": 10,
+        "question": "What was the name of the portion of the exam that allowed Izuku Midoriya to get into UA?",
+        "correctAnswer": "Rescue points",
+        "options": [
+            "Service points",
+            "Rescue points",
+            "Heroic points",
+            "Physical points"
+        ]
+    },
+    {
+        "id": 11,
+        "question": "What was Izuku Midoriya point's scored in the second unknown portion of the test",
+        "correctAnswer": "60",
+        "options": [
+            "60",
+            "0",
+            "30",
+            "15"
+        ]
+    },
+    {
+        "id": 12,
+        "question": "Who got the most votes to become the Class Representative of Class 1-A",
+        "correctAnswer": "Izuku Midoriya",
+        "options": [
+            "Izuku Midoriya",
+            "Tsuyu Asui",
+            "Momo Yaoyorozu",
+            "Tenya Iida"
+        ]
+    },
+    {
+        "id": 13,
+        "question": "What was the name of the first villain that Izuku Midoriya fought",
+        "correctAnswer": "Sludge villain",
+        "options": [
+            "Sludge villain",
+            "Stain",
+            "Muscular",
+            "Shigaraki"
+        ]
+    },
+    {
+        "id": 14,
+        "question": "Who is class 1-A Class Representative",
+        "correctAnswer": "Tenya Iida",
+        "options": [
+            "Tenya Iida",
+            "Izuku Midoriya",
+            "Momo Yaoyorozu",
+            "Tsuyu Asui"
+        ]
+    },
+    {
+        "id": 15,
+        "question": "How many meters did Katsuki Bakugo score on the throw test of the quirk apprehension test",
+        "correctAnswer": "705.2 meters",
+        "options": [
+            "705.2 meters",
+            "349.9 meters",
+            "847.7 meters",
+            "678.2 meters"
+        ]
+    },
+    {
+        "id": 16,
+        "question": "How many meters did Izuku Midoriya score on the throw test of the quirk apprehension test",
+        "correctAnswer": "705.3 meters",
+        "options": [
+            "705.3 meters",
+            "349.9 meters",
+            "847.7 meters",
+            "678.2 meters"
+        ]
+    },
+    {
+        "id": 17,
+        "question": "What was Katsuki Bakugo's original score in middle school on the throw test",
+        "correctAnswer": "65 meters",
+        "options": [
+            "65 meters",
+            "82 meters",
+            "24 meters",
+            "77 meters"
+        ]
+    },
+    {
+        "id": 18,
+        "question": "Why did Katsuki Bakugo skip the room competition when the class moved into the dorms",
+        "correctAnswer": "He wanted to sleep",
+        "options": [
+            "He wanted to sleep",
+            "He found it stupid and boring",
+            "He was kidnapped",
+            "He wanted to study"
+        ]
+    },
+    {
+        "id": 19,
+        "question": "When Katsuki Bakugo and Izuku Midoriya were on house arrest, Who scared Izuku Midoriya outside of the dorm when cleaning",
+        "correctAnswer": "Mirio Togata",
+        "options": [
+            "Mirio Togata",
+            "Tamaki Amajiki",
+            "Shoto Todoroki",
+            "All Might"
+        ]
+    },
+    {
+        "id": 20,
+        "question": "During the Shie Hassaikai raid, who was the first to fight Overhaul",
+        "correctAnswer": "Mirio Togata",
+        "options": [
+            "Tamaki Amajiki",
+            "Mirio Togata",
+            "Nejire Hado",
+            "Fat Gum"
+        ]
+    },
+    {
+       "id": 21,
+        "question": "Why did Doctor Kyudai Garaki's name get changed?",
+        "correctAnswer": "China banned My Hero Academia from their country due to his original name",
+        "options": [
+            "China banned My Hero Academia from their country due to his original name",
+            "The Americans got upset over his original name",
+            "The Japanese government got upset over his original name",
+            "South Korea banned My Hero Academia from their country due to his original name"
+        ]
+    },
+    {
+        "id": 22,
+        "question": "What was Doctor Kyudai Garaki's original name?",
+        "correctAnswer": "Maruta Shiga",
+        "options": [
+            "Maruta Shiga",
+            "Toya Setsuno",
+            "Showa Hirohito",
+            "Gekokujo Tokugawa"
+        ]
+    },
+    {
+        "id": 23,
+        "question": "Who is the creator of My Hero Academia",
+        "correctAnswer": "Kohei Horikoshi",
+        "options": [
+            "Kohei Horikoshi",
+            "Hirofumi Neda",
+            "Hideyuki Furuhashi",
+            "Akiyama Yoko"
+        ]
+    },
+    {
+        "id": 24,
+        "question": "Who is the creator of My Hero Academia Vigilantes",
+        "correctAnswer": "Hideyuki Furuhashi",
+        "options": [
+            "Kohei Horikoshi",
+            "Hirofumi Neda",
+            "Hideyuki Furuhashi",
+            "Akiyama Yoko"
+        ]
+    },
+    {
+        "id": 25,
+        "question": "Who is the creator of My Hero Academia Smash",
+        "correctAnswer": "Hirofumi Neda",
+        "options": [
+            "Kohei Horikoshi",
+            "Hirofumi Neda",
+            "Hideyuki Furuhashi",
+            "Akiyama Yoko"
+        ]
+    },
+    {
+        "id": 26,
+        "question": "Who is the creator of My Hero Academia Team Up Missions",
+        "correctAnswer": "Akiyama Yoko",
+        "options": [
+            "Kohei Horikoshi",
+            "Hirofumi Neda",
+            "Hideyuki Furuhashi",
+            "Akiyama Yoko"
+        ]
+    },
+    {
+        "id": 27,
+        "question": "What is the name of the first My Hero Academia movie",
+        "correctAnswer": "Two Heroes",
+        "options": [
+            "Two Heroes",
+            "Heroes Rising",
+            "World Heroes Mission",
+            "You're next"
+        ]
+    },
+    {
+        "id": 28,
+        "question": "What is the name of the second My Hero Academia movie",
+        "correctAnswer": "Heroes Rising",
+        "options": [
+            "Two Heroes",
+            "Heroes Rising",
+            "World Heroes Mission",
+            "You're next"
+        ]
+    },
+    {
+        "id": 29,
+        "question": "What is the name of the third My Hero Academia movie",
+        "correctAnswer": "World Heroes Mission",
+        "options": [
+            "Two Heroes",
+            "Heroes Rising",
+            "World Heroes Mission",
+            "You're next"
+        ]
+    },
+    {
+        "id": 30,
+        "question": "What is the name of the fourth My Hero Academia movie",
+        "correctAnswer": "You're next",
+        "options": [
+            "Two Heroes",
+            "Heroes Rising",
+            "World Heroes Mission",
+            "You're next"
+        ]
+    },
+    {
+        "id": 31,
+        "question": "What is the name of the first My Hero Academia spinoff",
+        "correctAnswer": "Vigilantes",
+        "options": [
+            "Vigilantes",
+            "Smash",
+            "Team Up Missions",
+            "Ultra Analysis"
+        ]
+    },
+    {
+        "id": 32,
+        "question": "What is the name of the second My Hero Academia spinoff",
+        "correctAnswer": "Smash",
+        "options": [
+            "Vigilantes",
+            "Smash",
+            "Team Up Missions",
+            "Ultra Analysis"
+        ]
+    },
+    {
+        "id": 33,
+        "question": "What is the name of the third My Hero Academia spinoff",
+        "correctAnswer": "Team Up Missions",
+        "options": [
+            "Vigilantes",
+            "Smash",
+            "Team Up Missions",
+            "Ultra Analysis"
+        ]
+    },
+    {
+        "id": 34,
+        "question": "Who decided to make their hero name after their own name except for Shoto Todoroki",
+        "correctAnswer": "Tenya Iida",
+        "options": [
+            "Tenya Iida",
+            "Izuku Midoriya",
+            "Shoto Todoroki",
+            "Katsuki Bakugo"
+        ]
+    },
+    {
+        "id": 35,
+        "question": "How do Shoto Todoroki and Katsuki Bakugo make their debut after obtaining their provisional hero licenses",
+        "correctAnswer": "Defeating thieves",
+        "options": [
+            "Defeating thieves",
+            "Defeating Nomus",
+            "Defeating League of Villain members",
+            "Defeating a killer"
+        ]
+    },
+    {
+        "id": 36,
+        "question": "What did Katsuki Bakugo do to disrespect Endeavor on the first day of the Hero Work-Studies",
+        "correctAnswer": "He called Endeavor cringy",
+        "options": [
+            "He called Endeavor cringy",
+            "He called Endeavor a half-assed hero",
+            "He called Endeavor an extra",
+            "He told Endeavor to go to hell"
+        ]
+    },
+    {
+        "id": 37,
+        "question": "In the forest training camp arc, who was the person who gets kidnapped?",
+        "correctAnswer": "Katsuki Bakugo",
+        "options": [
+            "Katsuki Bakugo",
+            "Izuku Midoriya",
+            "Shoto Todoroki",
+            "Shota Aizawa"
+        ]
+    },
+    {
+        "id": 38,
+        "question": "Who loses control of their quirk in the forest training camp arc",
+        "correctAnswer": "Fumikage Tokoyami",
+        "options": [
+            "Fumikage Tokoyami",
+            "Izuku Midoriya",
+            "Shoto Todoroki",
+            "Katsuki Bakugo"
+        ]
+    },
+    {
+        "id": 39,
+        "question": "When All Might was explaining to Izuku midoriya the fight with All for One. Which fight did Izuku midoriya think that he was mentioning?",
+        "correctAnswer": "The fight with Toxic chainsaw",
+        "options": [
+            "The fight with Toxic chainsaw",
+            "The fight with feisty Axer",
+            "The fight with Greedy gaping Jaw",
+            "The fight with Wolfram"
+        ]
+    },
+    {
+        "id": 40,
+        "question": "How long can All might do Hero work in one day when he first met Izuku Midoriya",
+        "correctAnswer": "3 hours",
+        "options": [
+            "3 hours",
+            "2 hours",
+            "1 hour",
+            "4 hours"
+        ]
+    },
+    {
+        "id": 41,
+        "question": "When does a persons quirk manifest",
+        "correctAnswer": "4 years old",
+        "options": [
+            "4 years old",
+            "3 years old",
+            "5 years old",
+            "2 years old"
+        ]
+    },
+    {
+        "id": 42,
+        "question": "What is America's number one hero named",
+        "correctAnswer": "Stars and Stripes",
+        "options": [
+            "Star and Stripe",
+            "Democracy and Freedom",
+            "Liberty and Justice",
+            "Symbol of Peace"
+        ]
+    },
+    {
+        "id": 43,
+        "question": "What is not an official term for quirks by the creator of My Hero Academia",
+        "correctAnswer": "Variant",
+        "options": [
+            "Variant",
+            "Mutant",
+            "Emitter",
+            "Transformation"
+        ]
+    },
+    {
+        "id": 44,
+        "question": "What question does All Might dodge in interviews",
+        "correctAnswer": "What is your quirk?",
+        "options": [
+            "What is your quirk?",
+            "Who is your successor?",
+            "What is your secret indentity?",
+            "Why have you become a teacher at UA high?"
+        ]
+    },
+    {
+        "id": 45,
+        "question": "Who gave Shota Aizawa his hero name?",
+        "correctAnswer": "Hizashi Yamada",
+        "options": [
+            "Toshinori Yagi",
+            "Shota Aizawa",
+            "Hizashi Yamada",
+            "Oboro Shirakumo"
+        ]
+    },
+    {
+        "id": 46,
+        "question": "Shota Aizawa was in a group of three with Hizashi Yamada. Who was the third member of this group?",
+        "correctAnswer": "Oboro Shirakumo",
+        "options": [
+            "Oboro Shirakumo",
+            "Toshinori Yagi",
+            "Nemuri Kayama",
+            "Sorahiko Torino"
+        ]
+    },
+    {
+        "id": 47,
+        "question": "What is Oboro Shirakumo's hero name",
+        "correctAnswer": "Loud Cloud",
+        "options": [
+            "Loud Cloud",
+            "Strong Cloud",
+            "Rain Storm",
+            "Kurogiri"
+        ]
+    },
+    {
+        "id": 48,
+        "question": "When the Media broke into UA high, What did Present Mic suggest they do to the media",
+        "correctAnswer": "Beat them up",
+        "options": [
+            "Beat them up",
+            "Call the police",
+            "Scream at them",
+            "Give them All Might"
+        ]
+    },
+    {
+        "id": 49,
+        "question": "When the Media broke into UA high, what did Aizawa say to the media?",
+        "correctAnswer": "I know how you people work, Give you an inch and you want a mile",
+        "options": [
+            "I know how you people work, Give you an inch and you want a mile",
+            "This is UA grounds. You're trespassing",
+            "All Might is not here today. Go away",
+            "Cops are coming."
+        ]
+    },
+    {
+        "id": 50,
+        "question": "What does Aizawa call All Might when he doesn't show up for rescue training with fifteen",
+        "correctAnswer": "The height of irresponsbility",
+        "options": [
+            "The height of irresponsbility",
+            "The height of arrogance",
+            "The height of laziness",
+            "The height of stupidity"
+        ]
+    },
+    {
+        "id": 51,
+        "question": "For season 5 of My Hero Academia the producers at Bone studios renamed the show for promotional reasons. What was the show called?",
+        "correctAnswer": "My Villain Academia",
+        "options": [
+            "My Villain Academia",
+            "My Hero Academia",
+            "The league of villains show",
+            "The Hero show"
+        ]
+    },
+    {
+        "id": 52,
+        "question": "What did Shoto Todoroki do to disrespect Endeavor on the first day of the Hero Work-Studies",
+        "correctAnswer": "He told Endeavor to stop complainning",
+        "options": [
+            "He told Endeavor to stop complainning",
+            "He called Endeavor out for being a bad father",
+            "He told Endeavor he perfers all might as a hero",
+            "He told Endeavor that he doesn't care about him"
+        ]
+    },
+    {
+        "id": 53,
+        "question": "What did Izuku Midoriya do to disrespect Endeavor on the first day of the Hero Work-Studies",
+        "correctAnswer": "He wore an All Might scarf",
+        "options": [
+            "He called Endeavor out for not caring about Bakugo and Midoriya",
+            "He wore an All Might scarf",
+            "He beat Endeavor to a rescue",
+            "He compared Endeavor to All might"
+        ]
+    },
+    {
+        "id": 54,
+        "question": "When Katsuki Bakugo gave his speech to the students of UA and the world at the sports festival as the representative of first years. What did midnight do during it?",
+        "correctAnswer": "Put her hand to her forehead and shook it in a no",
+        "options": [
+            "Put her hand to her forehead and shook it in a no",
+            "She told everyone to be more like him",
+            "She found it very appealing",
+            "She muted bakugo and continued on her speech"
+        ]
+    },
+    {
+        "id": 55,
+        "question": "What is the name of the ability that allows Izuku Midoriya to use 100% of One for All",
+        "correctAnswer": "Full Cowl",
+        "options": [
+            "Full Cowl",
+            "Detriot smash",
+            "Airforce",
+            "shoot style"
+        ]
+    },
+    {
+        "id": 56,
+        "question": "When Katsuki Bakugo gave his speech to the students of UA and the world at the sports festival as the first year representative. Who was the angeriest and said they will crush bakugo’s over confidence",
+        "correctAnswer": "Tetsutetsu Tetsutetsu",
+        "options": [
+            "Tetsutetsu Tetsutetsu",
+            "Eijiro Kirishima",
+            "Izuku Midoriya",
+            "Mina Ashido"
+        ]
+    },
+    {
+        "id": 57,
+        "question": "What did Aizawa tell the students to pay attention to in the obstacle race?",
+        "correctAnswer": "The doorway",
+        "options": [
+            "The doorway",
+            "The Rules",
+            "The other students",
+            "The finish line"
+        ]
+    },
+    {
+        "id": 58,
+        "question": "What did Present Mic call Aizawa at the beginning of the obstacle race?",
+        "correctAnswer": "Mummy man",
+        "options": [
+            "Mummy man",
+            "Eraserhead",
+            "worst cohost ever",
+            "worst teacher ever"
+        ]
+    },
+    {
+        "id": 59,
+        "question": "What happened to Mineta when he called todoroki pathetic?",
+        "correctAnswer": "A zero point robot hit him and sent him flying",
+        "options": [
+            "A zero point robot hit him and sent him flying",
+            "Todoroki ignored him",
+            "Todoroki froze him",
+            "Bakugo joined in and made fun of todoroki as well"
+        ]
+    },
+    {
+        "id": 60,
+        "question": "At the end of episode 15 Bakugo gives the preview. What does he say will happen?",
+        "correctAnswer": "The sports festival will end with him on top and izuku trampled on the ground in last place!",
+        "options": [
+            "The sports festival will end with him on top and izuku trampled on the ground in last place!",
+            "The sports festival will end with him being on top and sent to the best agencies!",
+            "The sports festival will end with him on top and he will be the best hero that UA has ever seen!",
+            "The sports festival will end with him on top and he will show the world what he is made of!"
+        ]
+    },
+    {
+        "id": 61,
+        "question": "What does izuku midoriya say in retort to Katsuki Bakugo's preview of episode 16?",
+        "correctAnswer": "That is not a preview. Thats more like your personal dreams",
+        "options": [
+            "That is not a preview. Thats more like your personal dreams",
+            "You are delusional Kacchan",
+            "What about the other students Kacchan? I think the viewers want to know about them",
+            "You are a bully Kacchan"
+        ]
+    },
+    {
+        "id": 62,
+        "question": "What does bakugo say in the preview for episode 16 if izuku gets one step ahead of him?",
+        "correctAnswer": "He will incinterate izukus him no questions asked. Actually he might just do it anyway even if izukus not ahead",
+        "options": [
+            "He will incinterate izukus him no questions asked. Actually he might just do it anyway even if izukus not ahead",
+            "He will personally find a way to ensure that Izuku Midoriya will never see the light of day again! Actually he might just do that anyway to ensure he doesn't get a chance!",
+            "He will kill Izuku Midoriya",
+            "He will break every bone inside of Izuku Midoriya and break whatever makes him tick!"
+        ]
+    },
+    {
+        "id": 63,
+        "question": "What percentage of society has a quirk?",
+        "correctAnswer": "80",
+        "options": [
+            "80",
+            "90",
+            "70",
+            "60"
+        ]
+    },
+    {
+        "id": 64,
+        "question": "In the manga izuku says “this is the story of how I became…” what does Izuku say?",
+        "correctAnswer": "The number one hero",
+        "options": [
+            "The number one hero",
+            "The best hero",
+            "The strongest hero",
+            "The greatest hero"
+        ]
+    },
+    {
+        "id": 65,
+        "question": "In the anime izuku says “this is the story of how I became…” what does izuku say?",
+        "correctAnswer": "The greatest hero",
+        "options": [
+            "The number one hero",
+            "The best hero",
+            "The strongest hero",
+            "The greatest hero"
+        ]
+    },
+    {
+        "id": 66,
+        "question": "When Izuku Midoriya flung himself into first place at the minefield. Present Mic asks Shota Aizawa what hes teaching his students. Shota Aizawa states its just their will power to push forward. What does Present Mic say after that?",
+        "correctAnswer": "There you have it folks! Mr Aizawa is a terrible teacher",
+        "options": [
+            "There you have it folks! Mr Aizawa is a terrible teacher",
+            "There you have it folks! Mr Aizawa is a great teacher",
+            "There you have it folks! Mr Aizawa simply doesn't care",
+            "There you have it folks! Class1A is taking the lead!"
+        ]
+    },
+    {
+        "id": 67,
+        "question": "During the preview for season 2 episode 17, Ochaco states what about Izuku Midoriya being a target",
+        "correctAnswer": "Its kinda sad being you isnt it?",
+        "options": [
+            "Its kinda sad being you isnt it?",
+            "Its kinda sad being a target",
+            "You'll make it through this!",
+            "You got this Izuku!"
+        ]
+    },
+    {
+        "id": 68,
+        "question": "Izuku midoriya is to do what for All might?",
+        "correctAnswer": "Proudly introduce himself and say I AM HERE!",
+        "options": [
+            "Proudly introduce himself and say I AM HERE!",
+            "Proudly introduce himself as the next symbol of peace!",
+            "Proudly introduce himself as the next number one hero!",
+            "STOP BLOODY CRYING ALL THE DAMN TIME!"
+        ]
+    },
+    {
+        "id": 69,
+        "question": "What did all might tell Izuku midoriya to think of the sports festival as?",
+        "correctAnswer": "His debut",
+        "options": [
+            "His debut",
+            "His first step",
+            "His first day",
+            "His first test"
+        ]
+    },
+    {
+        "id": 70,
+        "question": "In the sports festival who has 5 points and barely made the cut into the cavalry battle?",
+        "correctAnswer": "Yuga Aoyama",
+        "options": [
+            "Yuga Aoyama",
+            "Mina Ashido",
+            "Denki Kaminari",
+            "Minoru Mineta"
+        ]
+    },
+    {
+        "id": 71,
+        "question": "Who made 2nd place in the sports festival obstacle race?",
+        "correctAnswer": "Shoto Todoroki",
+        "options": [
+            "Shoto Todoroki",
+            "Katsuki Bakugo",
+            "Izuku Midoriya",
+            "Tenya Iida"
+        ]
+    },
+    {
+        "id": 72,
+        "question": "What did Mineta do to score 18th place in the sports festival obstacle race",
+        "correctAnswer": "He grabs onto Momo yaoyrozu until she crosses the finish line",
+        "options": [
+            "He grabs onto Momo yaoyrozu until she crosses the finish line",
+            "He ran and made it to finish line on his own",
+            "He grabs onto Tenya Iida until he crosses the finish line",
+            "He uses his purple balls to propel himself into 18th place"
+        ]
+    },
+    {
+        "id": 73,
+        "question": "Midnight says there are still rules for the cavalry battle. Make a team fall on purpose and she will do what?",
+        "correctAnswer": "She will slap them with a red card",
+        "options": [
+            "She will slap them with a red card",
+            "She will expell them from the sports festival as a whole",
+            "She will give them a zero",
+            "She will give them detention"
+        ]
+    },
+    {
+        "id": 74,
+        "question": "What did Katsuki Bakugo do to piss off his classmates right before the cavalry battle?",
+        "correctAnswer": "He asked them for their names and quirks",
+        "options": [
+            "He asked them for their names and quirks",
+            "He told them to get lost",
+            "He told them to follow his lead",
+            "He told them to shut up"
+        ]
+    },
+    {
+        "id": 75,
+        "question": "How many points does Bakugo have going into the cavalry battle?",
+        "correctAnswer": "250",
+        "options": [
+            "250",
+            "200",
+            "1000",
+            "100"
+        ]
+    },
+    {
+        "id": 76,
+        "question": "How did Ejiro Kirishima get in on Katsuki Bakugos team for the cavalry battle?",
+        "correctAnswer": "Reminding him that Ejiro Kirishima will be the guy to get that 10 million points.",
+        "options": [
+            "Reminding him that Ejiro Kirishima will be the guy to get that 10 million points.",
+            "Telling him that he would be the most reliable",
+            "He will be the best team mate Katsuki Bakugo would have.",
+            "Bakugo choose him"
+        ]
+    },
+    {
+        "id": 77,
+        "question": "Who was the first person that wanted to team up with Izuku Midoriya in the cavalry battle",
+        "correctAnswer": "Ochaco Uraraka",
+        "options": [
+            "Ochaco Uraraka",
+            "Mei Hatsume",
+            "Tsuyu Asui",
+            "Fumikage Tokoyami"
+        ]
+    },
+    {
+        "id": 78,
+        "question": "Who decided to reject Izuku Midoriyas team up invite in the cavalry battle",
+        "correctAnswer": "Tenya Iida",
+        "options": [
+            "Tenya Iida",
+            "Momo Yaoyorozu",
+            "Shoto Todoroki",
+            "Katsuki Bakugo"
+        ]
+    },
+    {
+        "id": 79,
+        "question": "Who says they will be taking Izuku Midoriya's head band within seconds of the cavalry battle starting",
+        "correctAnswer": "Toru Hagakure",
+        "options": [
+            "Toru Hagakure",
+            "Shoto Todoroki",
+            "Katsuki Bakugo",
+            "Minoru Mineta"
+        ]
+    },
+    {
+        "id": 80,
+        "question": "What is Izuku Midoriya's plan for the cavalry battle?",
+        "correctAnswer": "Run away",
+        "options": [
+            "Run away",
+            "Get as many points as possible",
+            "Get Katsuki Bakugos head band",
+            "Get Shoto Todoroki's head band"
+        ]
+    },
+    {
+        "id": 81,
+        "question": "Damn support course students! Who says this in the cavalry battle?",
+        "correctAnswer": "Tetsutetsu Tetsutetsu",
+        "options": [
+            "Tetsutetsu Tetsutetsu",
+            "Katsuki Bakugo",
+            "Neito Monoma",
+            "Denki Kaminari"
+        ]
+    },
+    {
+        "id": 82,
+        "question": "What does Mei Hatsume call her inventions/creations",
+        "correctAnswer": "Babies",
+        "options": [
+            "Babies",
+            "Inventions",
+            "Creations",
+            "Gadgets"
+        ]
+    },
+    {
+        "id": 83,
+        "question": "Who is the first person to get their head band taken in the cavalry battle",
+        "correctAnswer": "Katsuki Bakugo",
+        "options": [
+            "Katsuki Bakugo",
+            "Izuku Midoriya",
+            "Shoto Todoroki",
+            "Tenya Iida"
+        ]
+    },
+    {
+        "id": 84,
+        "question": "What is dark shadow's part in Izuku Midoriya's plan for the cavalry battle",
+        "correctAnswer": "Watch over the blind spots and play defense",
+        "options": [
+            "Watch over the blind spots and play defense",
+            "Get as many points as possible",
+            "Attack and make room for them to go",
+            "Trap the other contestants to buy time to leave"
+        ] 
+    },
+    {
+        "id": 85,
+        "question": "Who stole the first head band in the cavalry battle",
+        "correctAnswer": "Neito Monoma",
+        "options": [
+            "Neito Monoma",
+            "Katsuki Bakugo",
+            "Hitoshi Shinso",
+            "Shoto Todoroki"
+        ]
+    },
+    {
+        "id": 86,
+        "question": "Izuku Midoriya questions if this action is allowed and Midnight says Yes. What is the action?",
+        "correctAnswer": "Mezu Shoji hiding his teammates under his arms",
+        "options": [
+            "Mezu Shoji hiding his teammates under his arms",
+            "Katsuki Bakugo using his quirk to propel himself",
+            "Hitoshi Shinso using his quirk to brainwash his own team",
+            "Midnight wearing a provcative outfit at a school event"
+        ]
+    },
+    {
+        "id": 87,
+        "question": "Present Mic questions if this action is allowed and Midnight says yes on a technicality. What is the action?",
+        "correctAnswer": "Katsuki Bakugo using his quirk to propel himself without his teammates",
+        "options": [
+            "Katsuki Bakugo using his quirk to propel himself without his teammates",
+            "Mezu Shoji hiding his teammates under his arms",
+            "Hitoshi Shinso using his quirk to brainwash his own team",
+            "Midnight wearing a provcative outfit at a school event"
+        ]
+    },
+    {
+        "id": 88,
+        "question": "What was class1B's plan for the sports festival?",
+        "correctAnswer": "Stay back and Watch then destroy class1A",
+        "options": [
+            "Stay back and Watch then destroy class1A",
+            "Go all out and destroy Class1A",
+            "Stay back let class1A embarrass themselves",
+            "Go all out and win"
+        ]
+    },
+    {
+        "id": 89,
+        "question": "Bakugo had a change of plans midway through the cavalry battle. What was his new plan?",
+        "correctAnswer": "Kill class1B thief and showoff!",
+        "options": [
+            "Kill class1B thief and showoff!",
+            "Get as many points as possible",
+            "Get Izuku Midoriya's head band",
+            "Get Shoto Todoroki's head band"
+        ]
+    },
+    {
+        "id": 90,
+        "question": "What is a quirk?",
+        "correctAnswer": "An uncanny ability",
+        "options": [
+            "An uncanny ability",
+            "A super power",
+            "A change in the individual",
+            "A unqiue ability"
+        ]
+    },
+    {
+        "id": 91,
+        "question": "What did Kyoka Jiro call Dark Shadow in the cavalry battle?",
+        "correctAnswer": "Stupid bird",
+        "options": [
+            "Stupid bird",
+            "Dark shadow",
+            "Monster",
+            "Bastard"
+        ]
+    },
+    {
+        "id": 92,
+        "question": "How many volts did Denki Kaminari use to take out the other teams in the cavalry battle",
+        "correctAnswer": "1.3 million volts",
+        "options": [
+            "1.3 million volts",
+            "1 million volts",
+            "2 million volts",
+            "3 million volts"
+        ]
+    },
+    {
+        "id": 93,
+        "question": "Who screams at Denki Kaminari directly while he shocks the nearby teams in the cavalry battle",
+        "correctAnswer": "Kyoka Jiro",
+        "options": [
+            "Kyoka Jiro",
+            "Katsuki Bakugo",
+            "Izuku Midoriya",
+            "Fumikage Tokoyami"
+        ]
+    },
+    {
+        "id": 94,
+        "question": "How long does Neito Monoma quirk last for",
+        "correctAnswer": "5 minutes",
+        "options": [
+            "5 minutes",
+            "10 minutes",
+            "15 minutes",
+            "20 minutes"
+        ]
+    },
+    {
+        "id": 95,
+        "question": "What does Present Mic call Shoto Todoroki in the cavalry battle",
+        "correctAnswer": "Ice Bastard",
+        "options": [
+            "Ice Bastard",
+            "Bastard",
+            "Endeavors son",
+            "miserable child"
+        ]
+    },
+    {
+        "id": 96,
+        "question": "What does Tenya Ida do to ensure Shoto Todoroki's win in the cavalry battle",
+        "correctAnswer": "Torque Overload!",
+        "options": [
+            "Torque Overload!",
+            "Recipro Burst!",
+            "Recipro blast!",
+            "Engine Acceleration!"
+        ]
+    },
+    {
+        "id": 97,
+        "question": "What does Shoto Todoroki do to ensure Izuku Midoriya would not get the one million back cavalry battle",
+        "correctAnswer": "He hid it in the other head bands",
+        "options": [
+            "He hid it in the other head bands",
+            "He gave it to Tenya Iida",
+            "He defended it with his life",
+            "He froze Izuku Midoriya when he tried to take it"
+        ] 
+    },
+    {
+        "id": 98,
+        "question": "What was the point amount that Izuku Midoriya steal from Shoto Todoroki in the cavalry battle",
+        "correctAnswer": "70 points",
+        "options": [
+            "70 points",
+            "100 points",
+            "one million points",
+            "30 points"
+        ]
+    },
+    {
+        "id": 99,
+        "question": "What was the point value that Dark Shadow managed to obtain from Shoto Todoroki in the cavalry battle",
+        "correctAnswer": "615 points",
+        "options": [
+            "615 points",
+            "500 points",
+            "400 points",
+            "300 points"
+        ]
+    },
+    {
+        "id": 100,
+        "question": "What does Katsuki Bakugo do to Ejiro Kirishima when Ejiro Kirishima says we are in third place",
+        "correctAnswer": "Beats the daylights out of his head",
+        "options": [
+            "Beats the daylights out of his head",
+            "Tells him to shut up",
+            "Tells him that he will kill him",
+            "Tells him to get out of the way"
+        ]
+    },
+    {
+        "id": 101,
+        "question": "What did Katsuki Bakugo call Shoto Todoroki in the last 10 seconds of the battle? cavalry battle?",
+        "correctAnswer": "Icy hot",
+        "options": [
+            "Icy hot",
+            "Half and half bastard",
+            "Bastard",
+            "Extra"
+        ]
+    },
+    {
+        "id": 102,
+        "question": "At the end of the cavalry battle, what does Katsuki Bakugo throw a tantrum about?",
+        "correctAnswer": "He ran out of time to grab the one million",
+        "options": [
+            "He ran out of time to grab the one million",
+            "He lost the one million",
+            "He didn't get first place",
+            "Midoriya scored more than him"
+        ]
+    },
+    {
+        "id": 103,
+        "question": "What does Shota Aizawa say to Present mic when Present Mic suggests lunch?",
+        "correctAnswer": "I'm taking a nap",
+        "options": [
+            "I'm taking a nap",
+            "Leave me alone",
+            "You're the worst",
+            "I hate my life"
+        ]
+    },
+    {
+        "id": 104,
+        "question": "What does Katsuki Bakugo say when hes matched against Uraraka in the head to head battles",
+        "correctAnswer": "Uraraka? Who the hell is that?",
+        "options": [
+            "Uraraka? Who the hell is that?",
+            "Uraraka? I'm going to crush her",
+            "Uraraka? I'm going to destroy her",
+            "Uraraka? I'm going to kill her"
+        ]
+    },
+    {
+        "id": 105,
+        "question": "What strengthens Tetsutetsu Tetsutetsu's quirk",
+        "correctAnswer": "Iron",
+        "options": [
+            "Iron",
+            "Steel",
+            "Calcium",
+            "Metal"
+        ]
+    },
+    {
+        "id": 106,
+        "question": "What does Itsuki Kendo do to Neito Monoma in the side games",
+        "correctAnswer": "She grabs him with her big hands",
+        "options": [
+            "She grabs him with her big hands",
+            "She punches him",
+            "She kicks him",
+            "She slaps him"
+        ]
+    },
+    {
+        "id": 107,
+        "question": "What does All might want Izuku Midoriya to say?",
+        "correctAnswer": "You'll do your best!",
+        "options": [
+            "You'll do your best!",
+            "You'll win!",
+            "You're here!",
+            "You'll be number one!"
+        ]
+    },
+    {
+        "id": 108,
+        "question": "What was All might's advice to Izuku Midoriya?",
+        "correctAnswer": "Smile when you are nervous!",
+        "options": [
+            "Smile when you are nervous!",
+            "Smile when you are scared!",
+            "feel don't think!",
+            "Think how far you have gotten!"
+        ]
+    },
+    {
+        "id": 109,
+        "question": "How did Hitoshi Shinso provoke Izuku Midoriya to talk in the head to head battles",
+        "correctAnswer": "He called Mashirao Ojiro a monkey",
+        "options": [
+            "He called Mashirao Ojiro a monkey",
+            "He called Izuku Midoriya a coward",
+            "He called All Might a loser",
+            "He called Izuku Midoriya a cry baby"
+        ]
+    },
+    {
+        "id": 110,
+        "question": "According to Shota Aizawa, What does the entrance exam favors?",
+        "correctAnswer": "Those with quirks that are innately physically powerful/strong",
+        "options": [
+            "Those with quirks that are innately physically powerful/strong",
+            "Those with quirks",
+            "Those with quirks that are gifted",
+            "Those who are inherently strong"
+        ]
+    },
+    {
+        "id": 111,
+        "question": "When do we(the viewer) learn Hitoshi Shinso's quirk?",
+        "correctAnswer": "When he brainwashes Izuku Midoriya",
+        "options": [
+            "When he brainwashes Izuku Midoriya",
+            "When he brainwashes Mashirao Ojiro",
+            "When he brainwashes Katsuki Bakugo",
+            "When he brainwashes Shoto Todoroki"
+        ]
+    },
+    {
+        "id": 112,
+        "question": "Who gives Izuku Midoriya the advice to not talk to Hitoshi Shinso",
+        "correctAnswer": "Mashirao Ojiro",
+        "options": [
+            "Mashirao Ojiro",
+            "Ochaco Uraraka",
+            "Shoto Todoroki",
+            "Tenya Iida"
+        ]
+    },
+    {
+        "id": 113,
+        "question": "What ruins Hitoshi Shinso's brainwashing effects?",
+        "correctAnswer": "Physical contact",
+        "options": [
+            "Physical contact",
+            "Mental contact",
+            "Emotional contact",
+            "Spiritual contact"
+        ]
+    },
+    {
+        "id": 114,
+        "question": "When do we first see the vessels of one for all?",
+        "correctAnswer": "When Izuku Midoriya is one step from out of bounds",
+        "options": [
+            "When Izuku Midoriya is one step from out of bounds",
+            "When Izuku Midoriya tries to talk to Hitoshi Shinso",
+            "When Izuku Midoriya is about to win",
+            "When Izuku Midoriya is about to be brainwashed"
+        ]
+    },
+    {
+        "id": 115,
+        "question": "What do the vessels do to help Izuku Midoriya the first time they appear?",
+        "correctAnswer": "They allowed him to move his fingers",
+        "options": [
+            "They allowed him to move his fingers",
+            "They allowed him to move his arm",
+            "They allowed him to move his legs",
+            "They allowed him to move his body"
+        ]
+    },
+    {
+        "id": 116,
+        "question": "How many vessels showed up on the first appearance?",
+        "correctAnswer": "8",
+        "options": [
+            "8",
+            "7",
+            "6",
+            "5"
+        ]
+    },
+    {
+        "id": 117,
+        "question": "What does Izuku Midoriya do to Hitoshi Shinso to win the head to head battle",
+        "correctAnswer": "He front flipped Hitoshi Shinso out of bounds",
+        "options": [
+            "He front flipped Hitoshi Shinso out of bounds",
+            "He back flipped Hitoshi Shinso out of bounds",
+            "He shoved Hitoshi Shinso out of bounds",
+            "He roundhouse kicked Hitoshi Shinso out of bounds"
+        ]
+    },
+    {
+        "id": 118,
+        "question": "What does Hitoshi Shinso tell the viewers hes use to people.....",
+        "correctAnswer": "Seeing him as a villain",
+        "options": [
+            "Seeing him as a villain",
+            "Seeing him as a hero",
+            "Seeing him as a friend",
+            "ignoring him"
+        ]
+    },
+    {
+        "id": 119,
+        "question": "Why does Hitoshi Shinso want to be a hero?",
+        "correctAnswer": "His heart drives for it",
+        "options": [
+            "His heart drives for it",
+            "To save people",
+            "His soul drives for it",
+            "To break the sterotype of his quirk"
+        ]
+    },
+    {
+        "id": 120,
+        "question": "What does Hitoshi Shinso do to Izuku Midoriya after inspiring Izuku Midoriya?",
+        "correctAnswer": "He brainwashes him",
+        "options": [
+            "He brainwashes him",
+            "He high fives him",
+            "He celebrates Izuku's win",
+            "He slaps him"
+        ]
+    },
+    {
+        "id": 121,
+        "question": "What does Hitoshi Shinso say to Izuku Midoriya after the head to head battle",
+        "correctAnswer": "You better not lose to make me look bad",
+        "options": [
+            "You better not lose to make me look bad",
+            "I will be in the hero course some day",
+            "You cheated",
+            "You will go down one day"
+        ]
+    },
+    {
+        "id": 122,
+        "question": "What did healing girl do to All Might after the first head to head battle",
+        "correctAnswer": "She hit All mights kidney",
+        "options": [
+            "She hit All mights kidney",
+            "She healed All Might",
+            "She told All Might hes a good teacher",
+            "She yelled at All Might"
+        ]
+    },
+    {
+        "id": 123,
+        "question": "What did one of the vessels have?",
+        "correctAnswer": "Eyes like All Might",
+        "options": [
+            "Eyes like All Might",
+            "Eyes like Izuku Midoriya",
+            "A smoke appearance",
+            "A smile"
+        ]
+    },
+    {
+        "id": 124,
+        "question": "Who was smiling and excited with the thought of todoroki being eliminated by Hanta Sero in the head to head battle?",
+        "correctAnswer": "Minoru Mineta",
+        "options": [
+            "Minoru Mineta",
+            "Denki Kaminari",
+            "Mina Ashido",
+            "Katsuki Bakugo"
+        ]
+    },
+    {
+        "id": 125,
+        "question": "What did Midnight say to Hanta Sero right before he was eliminated?",
+        "correctAnswer": "Tell the Truth",
+        "options": [
+            "Tell the Truth",
+            "Are you stuck?",
+            "I feel bad for frozen you are",
+            "That was quite the show"
+        ]
+    },
+    {
+        "id": 126,
+        "question": "At the end of season 2 episode 20 who does the preview for episode 21?",
+        "correctAnswer": "All Might and Izuku Midoriya",
+        "options": [
+            "All Might and Izuku Midoriya",
+            "Katsuki Bakugo and Izuku Midoriya",
+            "Shoto Todoroki and Izuku Midoriya",
+            "Present Mic and Izuku Midoriya"
+        ]
+    },
+    {
+        "id": 127,
+        "question": "What did class1A say about Neito Momona after Denki Kaminari and Ibara Shiozaki's head to head?",
+        "correctAnswer": "I hate that guy",
+        "options": [
+            "I hate that guy",
+            "He is a jerk",
+            "He is too obbessed with winning",
+            "He is a piece of work"
+        ]
+    },
+    {
+        "id": 128,
+        "question": "During Shoto Todoroki’s freezing of Hanta Sero, what did All might say?",
+        "correctAnswer": "What the heck! Is that an earth quake?!",
+        "options": [
+            "What the heck! Is that an earth quake?!",
+            "That was a bit extreme of Todoroki",
+            "Poor Sero, didn't get a chance",
+            "Midoriya is going to have a tough time"
+        ]
+    },
+    {
+        "id": 129,
+        "question": "What does Present Mic say about Midnight allowing Tenya Iida using Mei Hatsumes gear?",
+        "correctAnswer": "Really?",
+        "options": [
+            "Really?",
+            "This is a gray line",
+            "TMidnight is too leantient",
+            "Whats the point of rules?"
+        ]
+    },
+    {
+        "id": 130,
+        "question": "What does Shota Aizawa do when Mei Hatsume starts advertising herself and her gear in the head to head battle",
+        "correctAnswer": "Puts his hand on his own head",
+        "options": [
+            "Puts his hand on his own head",
+            "He tells her to shut up",
+            "He takes a nap",
+            "Bangs his head against the desk"
+        ]
+    },
+    {
+        "id": 131,
+        "question": "What does Present Mic say when Mei Hatsume starts adiversing herself and her gear in the head to head battle",
+        "correctAnswer": "This is weird",
+        "options": [
+            "This is weird",
+            "This is a first",
+            "This is a sports festival not an advertising platform",
+            "I hate my life"
+        ]
+    },
+    {
+        "id": 132,
+        "question": "Who supports Yuga Ayomona the most in his first head to head battle?",
+        "correctAnswer": "Minoru Mineta",
+        "options": [
+            "Minoru Mineta",
+            "Denki Kaminari",
+            "Mina Ashido",
+            "Katsuki Bakugo"
+        ]
+    },
+    {
+        "id": 133,
+        "question": "Who loses their pants in the sports festival?",
+        "correctAnswer": "Yuga Aoyama",
+        "options": [
+            "Yuga Aoyama",
+            "Denki Kaminari",
+            "Mina Ashido",
+            "Minoru Mineta"
+        ]
+    },
+    {
+        "id": 134,
+        "question": "Who loss their confidence after the head to head battle?",
+        "correctAnswer": "Momo Yaoyorozu",
+        "options": [
+            "Momo Yaoyorozu",
+            "Mina Ashido",
+            "Ochaco Uraraka",
+            "Yuga Aoyama"
+        ]
+    },
+    {
+        "id": 135,
+        "question": "What does Kyoka Jiro do to Minoru Mineta when he falls asleep?",
+        "correctAnswer": "She stabs him with her earphone jacks",
+        "options": [
+            "She stabs him with her earphone jacks",
+            "She yells at him",
+            "She kicks him",
+            "She lets him sleep hoping he would never wake up ever again"
+        ]
+    },
+    {
+        "id": 136,
+        "question": "Why does Ochaco Uraraka rejects Izuku Midoriya's plan?",
+        "correctAnswer": "She wants to win on her own merits",
+        "options": [
+            "She wants to win on her own merits",
+            "She knows Izuku Midoriya's plan would not work",
+            "She wants Izuku Midoriya to prep for his own battle",
+            "She is too mad to listen to Izuku Midoriya"
+        ]
+    },
+    {
+        "id": 137,
+        "question": "What head to head is the only one that ends in a stale mate and had to have round two?",
+        "correctAnswer": "Tetsutetsu Tetsutetsu and Eijiro Kirishima",
+        "options": [
+            "Tetsutetsu Tetsutetsu and Eijiro Kirishima",
+            "Katsuki Bakugo and Izuku Midoriya",
+            "Shoto Todoroki and Izuku Midoriya",
+            "Katsuki Bakugo and Ochaco Uraraka"
+        ]
+    },
+    {
+        "id": 138,
+        "question": "How was the winner of the stale mate head to head decided?",
+        "correctAnswer": "An Arm Wrestle",
+        "options": [
+            "An Arm Wrestle",
+            "Another fight",
+            "Quirkless battle",
+            "Logical battle"
+        ]
+    },
+    {
+        "id": 139,
+        "question": "What does Asui Tsuyu say about Katsuki Bakugo and Ochaco Uraraka’s head to head?",
+        "correctAnswer": "This match is disturbing",
+        "options": [
+            "This match is disturbing",
+            "This match is intense",
+            "This match is interesting",
+            "This match is depressing"
+        ]
+    },
+    {
+        "id": 140,
+        "question": "Who was the final first rounds of match ups in the head to head battles?",
+        "correctAnswer": "Katsuki Bakugo vs Ochaco Uraraka",
+        "options": [
+            "Katsuki Bakugo vs Ochaco Uraraka",
+            "Shoto Todoroki vs Hanta Sero",
+            "Fumikage Tokoyami vs Momo Yaoryozu",
+            "Eijiro Kirishima vs Tetsutetsu Tetsutetsu"
+        ]
+    },
+    {
+        "id": 141,
+        "question": "Who is Present Mic rooting for in Katsuki Bakugos and Ochaco Urarakas head to head battle?",
+        "correctAnswer": "Ochaco Uraraka",
+        "options": [
+            "Ochaco Uraraka",
+            "Katsuki Bakugo",
+            "He is neutral",
+            "Everyone sucks"
+        ]
+    },
+    {
+        "id": 142,
+        "question": "What does Minoru Mineta call Katsuki Bakugo in his head to head match?",
+        "correctAnswer": "A sadist",
+        "options": [
+            "A sadist",
+            "A bully",
+            "A jerk",
+            "A monster"
+        ]
+    },
+    {
+        "id": 143,
+        "question": "What did one of the audience members Call Katsuki Bakugo during his head to head match",
+        "correctAnswer": "A bully",
+        "options": [
+            "A bully",
+            "A jerk",
+            "A monster",
+            "A sadist"
+        ]
+    },
+    {
+        "id": 144,
+        "question": "When Present Mic says he agrees with the crowd what does Shota Aizawa do",
+        "correctAnswer": "Elbow Present mic in the face and steal the microphone",
+        "options": [
+            "Elbow Present mic in the face and steal the microphone",
+            "He tells the crowd to shut up",
+            "He tells the crowd to leave",
+            "He tells the crowd to stop"
+        ]
+    },
+    {
+        "id": 145,
+        "question": "What does Shota Aizawa say to the protesting crowd",
+        "correctAnswer": "Where is the man who started this uproar?",
+        "options": [
+            "Where is the man who started this uproar?",
+            "You guys are pathetic",
+            "Katsuki Bakugo has worked the hardest out of anyone to get here",
+            "Ochaco Uraraka knows what she is up against. She is not a child"
+        ]
+    },
+    {
+        "id": 146,
+        "question": "What does Ochaco Uraraka thank for Katsuki Bakugo for doing?",
+        "correctAnswer": "For keeping his eyes focused on Ochaco Uraraka",
+        "options": [
+            "For keeping his eyes focused on Ochaco Uraraka",
+            "For not holding back against her",
+            "For fighting her and not backing down",
+            "For being a common enemy"
+        ]
+    },
+    {
+        "id": 147,
+        "question": "Who was the only person who noticed Ochaco Uraraka’s plan(other than Shota Aizawa)?",
+        "correctAnswer": "Neito Monoma",
+        "options": [
+            "Neito Monoma",
+            "No one else",
+            "Izuku Midoriya",
+            "Endeavor"
+        ]
+    },
+    {
+        "id": 148,
+        "question": "What does Neito Monoma say about Ochaco Uraraka’s plan?",
+        "correctAnswer": "I expected Bakugo to be blinded but the whole crowd as well?",
+        "options": [
+            "I expected Bakugo to be blinded but the whole crowd as well?",
+            "Class1A is pathetic for not seeing this",
+            "I would've seen this coming a mile away",
+            "Everyone sucks"
+        ]
+    },
+    {
+        "id": 149,
+        "question": "What does Shota Aizawa say to Present Mic when he says 'A meteor shower?'",
+        "correctAnswer": "Now you notice",
+        "options": [
+            "Now you notice",
+            "You are late",
+            "You are slow",
+            "Why are you a hero?"
+        ]
+    },
+    {
+        "id": 150,
+        "question": "What does Shota Aizawa say to present mic when hes not happy Katsuki Bakugo was moving on?",
+        "correctAnswer": "You are suppose to be unbiased",
+        "options": [
+            "You are suppose to be unbiased",
+            "Can you please shut up already?",
+            "We need better media coverage",
+            "I am taking a nap"
+        ]
+    },
+    {
+        "id": 151,
+        "question": "What did Katsuki Bakugo say to the class about Ochaco Uraraka after his head to head?",
+        "correctAnswer": "I definitely wouldn't call that girl frail",
+        "options": [
+            "I definitely wouldn't call that girl frail",
+            "She was stupid",
+            "I am the best there is and she didn't stand a chance",
+            "She was a worthy opponent"
+        ]
+    },
+    {
+        "id": 152,
+        "question": "What does Ochaco Uraraka’s dad say she will become?",
+        "correctAnswer": "A kind and caring hero",
+        "options": [
+            "A kind and caring hero",
+            "A strong and powerful hero",
+            "A smart and intelligent hero",
+            "A brave and courageous hero"
+        ]
+    },
+    {
+        "id": 153,
+        "question": "What does Izuku Midoriya say to Endeavor before his second head to head battle?",
+        "correctAnswer": "Shoto Todoroki is not endeavor",
+        "options": [
+            "Shoto Todoroki is not endeavor",
+            "Shoto Todoroki is stronger than Endeavor",
+            "He will not go easy on Shoto Todoroki",
+            "I do not need your advice Endeavor"
+        ]
+    },
+    {
+        "id": 154,
+        "question": "What does Fumikage Tokoyami say to Ochaco Uraraka before Izuku Midoriya’s second match begins?",
+        "correctAnswer": "Use this next fight as a source of encouragement",
+        "options": [
+            "Use this next fight as a source of encouragement",
+            "Use this next fight as a source of strength",
+            "Use this next fight as a source of power",
+            "Use this next fight as a source of hope"
+        ]
+    },
+    {
+        "id": 155,
+        "question": "What is said to Tomura shigaraki in Izuku Midoriya’s second head to head?",
+        "correctAnswer": "Pay attention to this. They might be formidable to you some day",
+        "options": [
+            "Pay attention to this. They might be formidable to you some day",
+            "This will be pure entertainment for you",
+            "That is enough heroes for today. Shut that off",
+            "They live in a different world than you Tomura. Pay attention"
+        ]
+    },
+    {
+        "id": 156,
+        "question": "What does Inko Midoriya fill the house with?",
+        "correctAnswer": "Tissues",
+        "options": [
+            "Tissues",
+            "Food",
+            "Collectiables",
+            "Tears"
+        ]
+    },
+    {
+        "id": 157,
+        "question": "What does All might say to Thirteen about Izuku Midoriya and Shoto Todoroki",
+        "correctAnswer": "They have more in common than they realize",
+        "options": [
+            "They have more in common than they realize",
+            "They are strong opponents",
+            "They are more powerful than they realize",
+            "This is going to be a battle against mine and Endeavors sucessors"
+        ]
+    },
+    {
+        "id": 158,
+        "question": "Who does the preview for episode 23 season 2",
+        "correctAnswer": "Shoto Todoroki and Izuku Midoriya",
+        "options": [
+            "Shoto Todoroki and Izuku Midoriya",
+            "Katsuki Bakugo and Izuku Midoriya",
+            "Shoto Todoroki and Katsuki Bakugo",
+            "Shoto Todoroki and Ochaco Uraraka"
+        ]
+    },
+    {
+        "id": 159,
+        "question": "What does Tomura say in his preview?",
+        "correctAnswer": "It's about time you finally called me in for one of these stupid previews",
+        "options": [
+            "It's about time you finally called me in for one of these stupid previews",
+            "I am going to finally kill the symbol of peace and destroy japan as we know it",
+            "I am going to destroy them all",
+            "My nomu's are going to rip you to shreds bratt"
+        ]
+    },
+    {
+        "id": 160,
+        "question": "What does Deku say about Tomura’s idea of taking over previews?",
+        "correctAnswer": "SOMEBODY HELP!",
+        "options": [
+            "SOMEBODY HELP!",
+            "That is not a good idea",
+            "I will stop you!",
+            "Anything but that!"
+        ]
+    },
+    {
+        "id": 161,
+        "question": "What does Shoto Todoroki say about the head to head match against Izuku Midoriya?",
+        "correctAnswer": "This will be over quickly",
+        "options": [
+            "This will be over quickly",
+            "Stop messing with me!",
+            "You must be All Mights secret love child!",
+            "My dear old dad is watching. Make it count!"
+        ]
+    },
+    {
+        "id": 162,
+        "question": "In Shoto Todoroki's childhood, What does Rei tell Shoto Todoroki to do?",
+        "correctAnswer": "Stay true to yourself",
+        "options": [
+            "Stay true to yourself",
+            "Become a true hero",
+            "Don't become like your father",
+            "Go to hell"
+        ]
+    },
+    {
+        "id": 163,
+        "question": "What does Kirishima say to the class after he recovers from his first head to head battle?",
+        "correctAnswer": "Looks like I get to take Bakugo next",
+        "options": [
+            "Looks like I get to take Bakugo next",
+            "I proved I was stronger!",
+            "That was a manly battle",
+            "I am going to win this!"
+        ]
+    },
+    {
+        "id": 164,
+        "question": "What was the first thing that Shoto Todoroki calls Endeavor in his second head to head battle?",
+        "correctAnswer": "It",
+        "options": [
+            "It",
+            "Endeavor",
+            "monster of a father",
+            "father"
+        ]
+    },
+    {
+        "id": 165,
+        "question": "What was the second thing that Shoto Todoroki calls Endeavor in his second head to head battle?",
+        "correctAnswer": "Monster of a father",
+        "options": [
+            "Monster of a father",
+            "Endeavor",
+            "It",
+            "Father"
+        ]
+    },
+    {
+        "id": 166,
+        "question": "What does Izuku Midoriya try to convince Shoto Todoroki in his head to head?",
+        "correctAnswer": "Its not his quirk! Its yours!",
+        "options": [
+            "Its not his quirk! Its yours!",
+            "You can't let him win!",
+            "You can't let him control you!",
+            "You can't let him win!"
+        ]
+    },
+    {
+        "id": 167,
+        "question": "What does Shoto Todoroki say to Izuku Midoriya in the end his head to head battle?",
+        "correctAnswer": "I see now. Thank you",
+        "options": [
+            "I see now. Thank you",
+            "I see now. I will win",
+            "I see now. I will be number one",
+            "I see now. I will be the best"
+        ]
+    },
+    {
+        "id": 168,
+        "question": "What does Shoto Todoroki say to Endeavor after his head to head battle?",
+        "correctAnswer": "For that one moment. I forgot all about you",
+        "options": [
+            "For that one moment. I forgot all about you",
+            "I simply ignored you",
+            "You are the worst",
+            "I will never forgive you"
+        ]
+    },
+    {
+        "id": 169,
+        "question": "What does Shoto Todoroki call Endeavor after his head to head battle?",
+        "correctAnswer": "A fool",
+        "options": [
+            "A fool",
+            "A monster",
+            "A jerk",
+            "A bastard"
+        ]
+    },
+    {
+        "id": 170,
+        "question": "When does All Might tell Izuku Midoriya that he was quirkless just like Izuku Midoriya?",
+        "correctAnswer": "Season 2 episode 24",
+        "options": [
+            "Season 2 episode 24",
+            "Season 2 episode 23",
+            "Season 2 episode 22",
+            "Season 2 episode 21"
+        ]
+    },
+    {
+        "id": 171,
+        "question": "What does Tenya do once he learned about his brother?",
+        "correctAnswer": "He runs to the hospital",
+        "options": [
+            "He runs to the hospital",
+            "He cries",
+            "He yells",
+            "He runs to stain"
+        ]
+    },
+    {
+        "id": 172,
+        "question": "What does Katsuki Bakugo keep reminding the class about throughout the whole sports festival?",
+        "correctAnswer": "Quirks are just like physical muscles",
+        "options": [
+            "Quirks are just like physical muscles",
+            "I am going to win!",
+            "How the class sucks",
+            "How Neito Monoma is full of himself"
+        ]
+    },
+    {
+        "id": 173,
+        "question": "What does Izuku Midoriya do with Katsuki Bakugo's advise during the sports festival?",
+        "correctAnswer": "He doesn't pay any attention to it",
+        "options": [
+            "He doesn't pay any attention to it",
+            "He uses it",
+            "He alters it",
+            "He argues it"
+        ]
+    },
+    {
+        "id": 174,
+        "question": "Why does Katsuki Bakugo not consider it a real win in the sports festival?",
+        "correctAnswer": "Shoto Todoroki only used his ice quirk",
+        "options": [
+            "Shoto Todoroki only used his ice quirk",
+            "Shoto Todoroki didn't try hard enough",
+            "Shoto Todoroki was fighting a mental battle instead of Katsuki Bakugo",
+            "Katsuki Bakugo thought it was too easy"
+        ]
+    },
+    {
+        "id": 175,
+        "question": "What did All Might say about Katsuki Bakugo in the sports festival award ceremony?",
+        "correctAnswer": "Super Scary",
+        "options": [
+            "Super Scary",
+            "The will power is immense",
+            "Whether Bakugo likes it or not. He did win",
+            "Izuku Midoriya is going to have a tough time with this kid"
+        ]
+    },
+    {
+        "id": 176,
+        "question": "What did the audience get mad at All Might for after his speech?",
+        "correctAnswer": "Saying good job instead of Plus Ultra!",
+        "options": [
+            "Saying good job instead of Plus Ultra!",
+            "He didn't compliment the heroes enough",
+            "He let Endeavor say a few words",
+            "He didn't host the games and let Present Mic do it"
+        ]
+    },
+    {
+        "id": 177,
+        "question": "How many times did Inko Midoriya pass out after the cavalry battle?",
+        "correctAnswer": "7",
+        "options": [
+            "7",
+            "6",
+            "5",
+            "4"
+        ]
+    },
+    {
+        "id": 178,
+        "question": "What does the word Deku mean in japanese?",
+        "correctAnswer": "Wood, Blochead or fool",
+        "options": [
+            "Wood, Blochead or fool",
+            "Hero, Strong or Brave",
+            "Villain or weak",
+            "Boring"
+        ]
+    },
+    {
+        "id": 179,
+        "question": "Why does Midnight have final approval on hero names instead of Shot Aizawa?",
+        "correctAnswer": "Its not his forte",
+        "options": [
+            "Its not his forte",
+            "Midnight wanted to do it",
+            "He is too busy",
+            "He is too tired"
+        ]
+    },
+    {
+        "id": 180,
+        "question": "Who starts the nicknames for the class?",
+        "correctAnswer": "Yuga Aoyama",
+        "options": [
+            "Yuga Aoyama",
+            "Denki Kaminari",
+            "Mina Ashido",
+            "Momo Yaoyorozu"
+        ]
+    },
+    {
+        "id": 181,
+        "question": "What does the class think after the first two hero names were suggested?",
+        "correctAnswer": "First two were really weird",
+        "options": [
+            "First two were really weird",
+            "First two were really cool",
+            "First two were really boring",
+            "First two were really stupid"
+        ]
+    },
+    {
+        "id": 182,
+        "question": "What does the class do when Tsuyu Asui announces her hero name as froppy?",
+        "correctAnswer": "Chant her name and thank her for a normal name",
+        "options": [
+            "Chant her name and thank her for a normal name",
+            "Ignore her and keep trying to come up with their own names",
+            "inspired by her name and use that type of creativity",
+            "They chant her name and cheer for her future"
+        ]
+    },
+    {
+        "id": 183,
+        "question": "Who is Ejiro Kirishima's hero name based off?",
+        "correctAnswer": "Crimson Riot",
+        "options": [
+            "Crimson Riot",
+            "Red Riot",
+            "Red Rebellion",
+            "Crimson Guardian"
+        ]
+    },
+    {
+        "id": 184,
+        "question": "What did Bakugo try to make his hero name be?",
+        "correctAnswer": "Great explosion murder god Dynamight",
+        "options":[
+            "Great explosion murder god Dynamight",
+            "Bakugo",
+            "The number one hero!",
+            "Dynamight"
+        ]
+    },
+    {
+        "id": 185,
+        "question": "Who supervised class1A hero name picking?",
+        "correctAnswer": "Midnight",
+        "options":[
+            "Midnight",
+            "All Might",
+            "Aizawa",
+            "Present Mic"
+        ]
+    },
+    {
+        "id": 186,
+        "question": "What does Kyoka Jiro suggest Denki Kaminari's hero name be?",
+        "correctAnswer": "Jamming-yay",
+        "options":[
+            "Charge bolt",
+            "Jamming-yay",
+            "Kaminari",
+            "Stun gun"
+        ]
+    },
+    {
+        "id": 187,
+        "question": "How does All Might react to Izuku Midoriya's only agency offer?",
+        "correctAnswer": "Freaks out yelling",
+        "options":[
+            "Freaks out yelling",
+            "Is happy for Izuku",
+            "Annoyed",
+            "Impressed"
+        ]
+    },
+    {
+        "id": 188,
+        "question": "What does Asui tsuyu ask, when Minoru Mineta states that MT lady was his top choice?",
+        "correctAnswer":"Mineta are you thinking of something preverted?",
+        "options":[
+            "Mineta are you thinking of something preverted?",
+            "Why are you like this?",
+            "Can someone expel Mineta already?",
+            "Mr. Aizawa aren't you worried about Mineta disgracing our class?"
+        ]
+    },
+    {
+        "id": 189,
+        "question": "Which countries hero ignored orders to wait and went ahead to japan?",
+        "correctAnswer":"America",
+        "options":[
+            "America",
+            "China",
+            "Egypt",
+            "France"
+        ]
+    }
+
+
+
+
+]
+
