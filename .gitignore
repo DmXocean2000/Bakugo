@@ -4,7 +4,9 @@ node_modules
 CommandPurge.js
 DeleteCommand.js
 guildcommandpurge.js
+dice.js
+ban.js
+mute.js
 jsonnotes.json
 jsons/notes.txt
 config.js
-
