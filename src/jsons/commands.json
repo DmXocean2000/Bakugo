@@ -1,0 +1,157 @@
+[
+    {
+        "id": 0,
+        "name": "analysis",
+        "description": "Gives a description of a my hero academia character that my creator has implemented.",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!analysis <character_name>"
+    },
+    {
+        "id": 1,
+        "name": "di",
+        "description": "Picks a random number. No number gives you a 6 sided dice. however number afterwards will make it between 0 and new number",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!di <number> or !di"
+    },
+    {
+        "id": 2,
+        "name": "dog",
+        "description": "Gives a random dog image.",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!dog or !dog <breed>" 
+    },
+    {
+        "id": 3,
+        "name": "duck",
+        "description": "Gives a random duck image.",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!duck"
+    },
+    {
+        "id": 4,
+        "name": "ground",
+        "description": "Ground a user for fun! Note not a moderation command",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!ground <user>"
+    },
+    {
+        "id": 5,
+        "name": "rps",
+        "description": "Play rock paper scissors with the Bakugo! There are some fun twists to the original game!",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!rps <rock, paper, or scissors>"
+    },
+    {
+        "id": 6,
+        "name": "addition",
+        "description": "Add two or more numbers together. Up to 4",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!addition <number> <number> <number> <number>"
+    },
+    {
+        "id": 7,
+        "name": "subtraction",
+        "description": "Subtract two or more numbers together. Up to 4",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!subtraction <number> <number> <number> <number>"
+    },
+    {
+        "id": 8,
+        "name": "multiplication",
+        "description": "Multiply two or more numbers together. Up to 10",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!multiplication <number> <number> <number> <number>"
+    },
+    {
+        "id": 9,
+        "name": "division",
+        "description": "Divide two numbers together.",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!division <number> <number> <number> <number>"
+    },
+    {
+        "id": 10,
+        "name": "exponent",
+        "description": "Raise a number to the power of another number.",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!exponent <number> <number>"
+    },
+    {
+        "id": 11,
+        "name": "squareroot",
+        "description": "Get the square root of a number.",
+        "permissions": "everyone",
+        "type": "Math command",
+        "usage": "!squareroot <number>"
+    },
+    {
+        "id": 12,
+        "name": "say",
+        "description": "Make the bakugo say something.",
+        "permissions": "owner of bot",
+        "type": "Owner only",
+        "usage": "!say <message>"
+    },
+    {
+        "id": 13,
+        "name": "status",
+        "description": "Change the status of the bot.",
+        "permissions": "owner of bot",
+        "type": "Owner only",
+        "usage": "!status <status>"
+    },
+    {
+        "id": 14,
+        "name": "ping",
+        "description": "Check the latency of the bot.",
+        "permissions": "everyone",
+        "type": "Utility command",
+        "usage": "!ping"
+    },
+    {
+        "id": 15,
+        "name": "herotrivia",
+        "description": "Trivia game for My Hero Academia facts",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!herotrivia"
+    },
+    {
+        "id": 16,
+        "name": "guesswho",
+        "description": "Guess the character from My Hero Academia on a photo of the character",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!guesswho"
+    },
+    {
+        "id": 17,
+        "name": "twenty",
+        "description": "Play a game of 20 questions with bakugo on the character hes thinking of from my hero academia",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!twenty"
+    },
+    {
+        "id": 18,
+        "name": "purge",
+        "description": "Purge a certain amount of messages from the channel.",
+        "permissions": "Manage messages",
+        "type": "Moderation command",
+        "usage": "!purge <number>"
+    }
+    
+
+
+]

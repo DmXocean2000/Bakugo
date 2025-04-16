@@ -1,0 +1,434 @@
+
+=== [2025-04-16T17:46:34.326Z] ===
+Command: say
+User: dmxocean
+Message: !say hello
+Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\ownerOnly\say.js:7:61)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:16:21)
+    at Client.emit (node:events:526:35)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+------------------
+
+=== [2025-04-16T19:12:27.074Z] ===
+Command: eval
+User: dmxocean
+Message: !eval
+Error: Error: Cannot find module '../../config'
+Require stack:
+- C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\ownerOnly\eval.js
+- C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\handlers\loadCommands.js
+- C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\bakugo.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at clean (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\ownerOnly\eval.js:17:18)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\ownerOnly\eval.js:50:47)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:27:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+------------------
+=== [2025-04-16T19:51:29.143Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:152:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T19:52:05.668Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:152:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T19:55:37.588Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis Bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:157:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T19:56:33.858Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:158:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T19:57:30.956Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:160:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T20:00:35.340Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:165:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T20:02:17.063Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:169:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T20:03:28.992Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:174:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T20:04:05.500Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:174:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T20:04:53.069Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:175:24)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T20:06:31.403Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:174:26)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T20:07:02.799Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: TypeError: Cannot read properties of undefined (reading 'join')
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:176:26)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T20:08:48.874Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: CommandInteractionOptionResolver is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:188:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T20:10:15.792Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: CommandInteractionOptionResolver is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:191:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+
+------------------
+=== [2025-04-16T20:11:15.857Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: Console is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:191:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+
+------------------
+=== [2025-04-16T20:11:23.605Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: Console is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:191:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+
+------------------
+=== [2025-04-16T20:14:26.631Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: Console is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:193:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+
+------------------
+=== [2025-04-16T20:14:56.161Z] ===
+Command: analysis
+User: dmxocean
+Message: !analysis bakugo
+Error: ReferenceError: Console is not defined
+    at buildCharacterEmbed (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:94:3)
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\fun\analysis.js:193:20)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T21:05:42.275Z] ===
+Command: mod
+User: dmxocean
+Message: !mod 56 10
+Error: TypeError: result is not a function
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\math\modulos.js:42:7)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T21:06:06.373Z] ===
+Command: modulo
+User: dmxocean
+Message: !modulo 56 10
+Error: TypeError: result is not a function
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\math\modulos.js:42:7)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
+=== [2025-04-16T21:07:23.978Z] ===
+Command: mod
+User: dmxocean
+Message: !mod 10 1
+Error: TypeError: result is not a function
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\math\modulos.js:42:7)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+You forgot to save again! THIS ISNT JETBRAINS!
+------------------
+=== [2025-04-16T21:07:29.604Z] ===
+Command: mod
+User: dmxocean
+Message: !mod 55 10
+Error: TypeError: result is not a function
+    at Object.execute (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\commands\math\modulos.js:42:7)
+    at Client.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\src\events\messageCreate.js:28:21)
+    at Client.emit (node:events:514:28)
+    at MessageCreateAction.handle (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\actions\MessageCreate.js:32:14)
+    at module.exports [as MESSAGE_CREATE] (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:348:31)
+    at WebSocketManager.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\discord.js\src\client\websocket\WebSocketManager.js:232:12)
+    at WebSocketManager.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+    at WebSocketShard.<anonymous> (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@discordjs\ws\dist\index.js:1190:51)
+    at WebSocketShard.emit (C:\Users\MhyaW\Documents\myah w junk\bots\Bakugo\node_modules\@vladfrangu\async_event_emitter\dist\index.cjs:287:31)
+
+
+------------------
