@@ -107,7 +107,7 @@ No copyright infringement is intended, and this project is non-commercial and fa
 
 ## 🤖 AI Use
 
-This project includes (or will soon include) a single command that connects to the OpenAI API to generate responses that are MORE EXPLOSIVE AND BETTER!
+This project includes the usage of OepnAI in a single channel on discord. OpenAI API is being used to generate responses that are MORE EXPLOSIVE AND BETTER!
 
 That’s the **only damn AI** in me! Everything else — the trivia, the roasts, the chaos — is hand-coded by me and **doesn’t get sent to some stupid company called OpenAI for data sniffing.**
 
