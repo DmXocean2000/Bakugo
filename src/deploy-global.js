@@ -22,12 +22,10 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 (async () => {
   try {
     console.log('⏳ Registering slash commands...');
+    console.log(commands.map(c => c.name)); // should list ['status', ...]
 
     await rest.put(
-      Routes.applicationGuildCommands(
-        process.env.CLIENT_ID, // Your bot's client ID
-        process.env.GUILD_ID // Dev server ID for faster registration
-      ),
+      Routes.applicationCommands(process.env.CLIENT_ID),
       { body: commands }
     );
 

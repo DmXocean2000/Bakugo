@@ -1,17 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = function logError({ command, error, context }) {
+module.exports = function logError({ command, error, context = {} }) {
+  const logDir = path.resolve(__dirname, '../logs');
+  const logFile = path.join(logDir, 'error.log');
+
+  // Ensure the logs directory exists
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir);
+  }
+
   const timestamp = new Date().toISOString();
-  const errorLog = `=== [${timestamp}] ===
-Command: ${command}
-User: ${context.userTag}
-Message: ${context.messageContent}
-Error: ${error.stack || error.message || error}
+  const contextString = Object.entries(context)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join('\n');
 
-${Math.random() < 0.3 ? "You forgot to save again! THIS ISNT JETBRAINS!" : ""}
-------------------\n`;
+  const logEntry = `\n[${timestamp}]\nCOMMAND: ${command}\nERROR: ${error.stack || error}\nCONTEXT:\n${contextString}\n`;
 
-  const logPath = path.join(__dirname, '../../logs/error.log');
-  fs.appendFileSync(logPath, errorLog, 'utf-8');
+  fs.appendFileSync(logFile, logEntry);
 };

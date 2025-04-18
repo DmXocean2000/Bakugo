@@ -21,7 +21,7 @@ module.exports = (client) => {
   for (const file of commandFiles) {
     const command = require(file);
     if (command.name) {
-      console.log(`[COMMAND LOADED] ${command.name} from ${file}`);
+      //console.log(`[COMMAND LOADED] ${command.name} from ${file}`);
       client.commands.set(command.name, command);
     }
   }

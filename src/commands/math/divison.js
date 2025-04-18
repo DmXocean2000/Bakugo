@@ -1,5 +1,5 @@
 const { ApplicationCommandOptionType } = require("discord.js");
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: "divide",
   description: "Divides numbers. Try not to divide by zero, idiot.",
@@ -55,7 +55,7 @@ module.exports = {
     if (b === 0) {
       return interaction.reply({
         content: "You seriously tried to divide by ZERO?! Go to jail.",
-        ephemeral: true
+        flags: MessageFlags.Ephemeral
       });
     }
 

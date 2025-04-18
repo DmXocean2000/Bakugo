@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const path = require('path');
 const fs = require('fs');
 const characters = require(path.resolve(__dirname, '../../jsons/mha_characters.json'));
-
+const { MessageFlags } = require('discord.js');
 
 
 const characterMapping = {
@@ -95,12 +95,12 @@ function buildCharacterEmbed(characterName) {
     console.warn(`[WARN] Character not found in JSON: ${characterName}`);
     return {
       content: `I couldn't find data for **${characterName}**. Ask Ocean to double-check the file.`,
-      ephemeral: true
+      flags: MessageFlags.Ephemeral
     };
   }
 
   const c = characterObj; // consistent naming
-  console.log('[DEBUG] Character data:', c);
+  //console.log('[DEBUG] Character data:', c);
 
   const embed = new EmbedBuilder()
     .setColor(c.color || '#FF0000')
@@ -177,7 +177,7 @@ module.exports = {
     
 
     if (!character) {
-      console.log("[DEBUG] Character not found in aliasToCharacter mapping.");
+      //console.log("[DEBUG] Character not found in aliasToCharacter mapping.");
       return message.reply(`I don’t know that name, extra. Either it’s not added or you spelled it wrong.`);
     }
     const result = buildCharacterEmbed(character);
@@ -192,7 +192,7 @@ module.exports = {
     if (!character) {
       return interaction.reply({
         content: 'That character isn’t in my database. Talk to the bot owner or spell it right.',
-        ephemeral: true
+        flags: MessageFlags.Ephemeral
       });
     }
 

@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-
+const { MessageFlags } = require('discord.js');
 const insults = [
   "You really needed a bot to do this? Pathetic.",
   "Great, now you can brag about basic math. Congrats, nerd.",
@@ -60,7 +60,7 @@ module.exports = {
     if (isNaN(a) || isNaN(b)) {
       return interaction.reply({
         content: "Did you just forget what a number is? Try again, extra. You're making me depressed!",
-        ephemeral: true
+        flags: MessageFlags.Ephemeral
       });
     }
 

@@ -1,5 +1,5 @@
 const fetch = require('node-fetch'); // assuming you're using node-fetch v2
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: "dog",
   description: "Doggy!!!!",
@@ -42,7 +42,7 @@ module.exports = {
           : `Something went wrong. Try again later.`;
 
         if (interaction) {
-          return interaction.reply({ content: errorMsg, ephemeral: true });
+          return interaction.reply({ content: errorMsg, flags: MessageFlags.Ephemeral});
         } else if (message) {
           return message.reply(errorMsg);
         }
@@ -62,7 +62,7 @@ module.exports = {
       const failMsg = "Could not fetch a dog image right now.";
 
       if (interaction) {
-        return interaction.reply({ content: failMsg, ephemeral: true });
+        return interaction.reply({ content: failMsg, flags: MessageFlags.Ephemeral });
       } else if (message) {
         return message.reply(failMsg);
       }
