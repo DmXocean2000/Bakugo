@@ -34,6 +34,7 @@ jobs:
           key: ${{ secrets.HOST_SSH_KEY }}
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.HOST_USERNAME }}
+          passphrase: ${{secrets.HOST_SSH_PASSPRHASE}}  
           script: |
            pm2 delete Katsuki
            cd /home/opc/bakugo
