@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: 'modulo',
   description: 'Calculates the remainder of dividing two numbers.',
@@ -59,7 +59,7 @@ module.exports = {
     if (b === 0) {
       return interaction.reply({
         content: "You can't divide by zero, moron! Even Deku knows that!",
-        ephemeral: true
+        flags: MessageFlags.Ephemeral
       });
     }
 

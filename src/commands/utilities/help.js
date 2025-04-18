@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const path = require('path');
 const commandInfo = require(path.resolve(__dirname, '../../jsons/commands.json'));
+const { MessageFlags } = require('discord.js');
 
 const commandMapping = {
   addition: ['Addition', 'add', 'sum', 'plus'],
@@ -117,7 +118,7 @@ module.exports = {
     if (!embed) {
       return interaction.reply({
         content: "I don’t recognize that command.",
-        ephemeral: true,
+        flags: MessageFlags.Ephemeral,
       });
     }
 

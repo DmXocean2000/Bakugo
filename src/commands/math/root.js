@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: "root",
   description: "Find the nth root of a number.",
@@ -66,7 +66,7 @@ module.exports = {
     if (degree === 0 || isNaN(base) || isNaN(degree)) {
       return interaction.reply({
         content: "Zero? Really? You’re trying to divide by nothing now?!",
-        ephemeral: true,
+        flags: MessageFlags.Ephemeral,
       });
     }
 
@@ -74,7 +74,7 @@ module.exports = {
       return interaction.reply({
         content:
           "Even root of a negative? You want imaginary numbers next? Go to math jail.",
-        ephemeral: true,
+          flags: MessageFlags.Ephemeral,
       });
     }
 

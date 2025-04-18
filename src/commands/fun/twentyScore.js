@@ -1,6 +1,6 @@
 const { ApplicationCommandOptionType } = require('discord.js');
 const twentyScoreCountSchema = require('../../models/twentyScoreCountSchema');
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: 'twentyscore',
   description: 'Check your 20 Questions score or view the leaderboard.',
@@ -45,7 +45,7 @@ module.exports = {
       console.error('Error fetching score:', err);
       const errorMsg = "Bakugo exploded trying to load the score. Try again later.";
       if (isInteraction) {
-        await interaction.reply({ content: errorMsg, ephemeral: true });
+        await interaction.reply({ content: errorMsg, flags: MessageFlags.Ephemeral});
       } else {
         await message.reply(errorMsg);
       }

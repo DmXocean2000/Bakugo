@@ -1,5 +1,5 @@
 const { ApplicationCommandOptionType } = require("discord.js");
-
+const { MessageFlags } = require('discord.js');
 module.exports = {
   name: 'di',
   description: 'Roll a dice with a number of sides',
@@ -41,7 +41,7 @@ module.exports = {
     } else if (isNaN(input)) {
       const moron = retorts[Math.floor(Math.random() * retorts.length)];
       if (message) return message.reply(moron);
-      return interaction.reply({ content: moron, ephemeral: true });
+      return interaction.reply({ content: moron, flags: MessageFlags.Ephemeral });
     } else {
       di = parseInt(input);
     }

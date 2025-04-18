@@ -4,7 +4,7 @@ const {devIDs} = require('../../config.js');
 const prefix = '!';
 
 module.exports = (client) => {
-  console.log('[DEBUG] messageCreate listener loaded.');
+  //console.log('[DEBUG] messageCreate listener loaded.');
 
   client.on('messageCreate', async (message) => {
     if (message.author.bot || !message.content.startsWith(prefix)) return;
