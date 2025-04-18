@@ -41,19 +41,21 @@ module.exports = {
   ],
 
   async execute({ message, args }) {
-    //console.log("Bakugo heard your dumb command (legacy)");
-    const amount = parseInt(args[0], 10) + 1; // +1 to account for command message
+    const rawAmount = parseInt(args[0], 10);
+    const amount = rawAmount + 1; // +1 to also delete the command itself
 
-    //console.log(`Amount requested: ${amount}`);
-
-    if (isNaN(amount) || amount < 1 || amount > 100) {
+    if (isNaN(rawAmount) || rawAmount < 1 || rawAmount > 99) {
       return message.reply("Tch. Pick a number between 1 and 99, extra.");
     }
 
     try {
       const deleted = await message.channel.bulkDelete(amount, true);
 
-      await message.channel.send(getRandomResponse());
+      if (rawAmount === 1) {
+        await message.channel.send("You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?");
+      } else {
+        await message.channel.send(getRandomResponse());
+      }
 
     } catch (error) {
       if (error.code === 50013) {
@@ -68,7 +70,6 @@ module.exports = {
   },
 
   async slashExecute(interaction) {
-    //console.log("Bakugo heard your fancy slash command");
     const amount = interaction.options.getInteger('amount');
 
     if (amount < 1 || amount > 99) {
@@ -78,7 +79,17 @@ module.exports = {
     try {
       const deleted = await interaction.channel.bulkDelete(amount, true);
 
-      await interaction.followUp({ content: getRandomResponse(), flags: MessageFlags.Ephemeral });
+      if (amount === 1) {
+        await interaction.followUp({
+          content: "You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?",
+          flags: MessageFlags.Ephemeral
+        });
+      } else {
+        await interaction.followUp({
+          content: getRandomResponse(),
+          flags: MessageFlags.Ephemeral
+        });
+      }
 
     } catch (error) {
       if (error.code === 50013) {
