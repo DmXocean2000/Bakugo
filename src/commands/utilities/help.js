@@ -20,6 +20,10 @@ const commandMapping = {
   purge: ['Purge'],
   di: ['Dice', 'Di'],
   squareroot: ['SquareRoot', 'sqrt', 'root'],
+  twentyscore: ['Twentyscore', '20score'],
+  bakuschedule: ['Bakuschedule', 'BakuSchedule'],
+  modulo : ['Modulo', 'mod', 'remainder', 'modulus'],
+
 };
 
 const aliasToCommand = {};
