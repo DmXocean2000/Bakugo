@@ -40,4 +40,4 @@ jobs:
            cd /home/opc/Bakugo
            git pull
            npm install
-           pm2 start src/bakugo
+           pm2 start src/bakugo.js
