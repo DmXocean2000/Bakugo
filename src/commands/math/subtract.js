@@ -24,7 +24,7 @@ module.exports = {
   name: 'subtract',
   description: 'Subtract numbers like a damn genius.',
   category: 'Math',
-  aliases: ['minus', 'sub'],
+  aliases: ['minus', 'sub', 'subtraction'],
   legacy: true,
   slash: true,
   devOnly: false,

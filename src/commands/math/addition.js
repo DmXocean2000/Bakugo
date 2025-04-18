@@ -23,7 +23,7 @@ module.exports = {
   name: 'add',
   description: 'Adds numbers together',
   category: 'Math',
-  aliases: ['add', 'sum'],
+  aliases: ['add', 'sum', 'addition'],
   legacy: true,
   slash: true,
   devOnly: false,
@@ -53,7 +53,7 @@ module.exports = {
     ),
 
   async execute({ message, args }) {
-    console.log('[DEBUG] Math args:', args);
+    //console.log('[DEBUG] Math args:', args);
     if (args.some(arg => isNaN(arg))) {
       return message.reply("Do you even know what a number is? If you're considered bright, then I’m the number one hero!");
     }

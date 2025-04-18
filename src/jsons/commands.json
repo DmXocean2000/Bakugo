@@ -53,7 +53,7 @@
         "description": "Add two or more numbers together. Up to 4",
         "permissions": "everyone",
         "type": "Math command",
-        "usage": "!addition <number> <number> <number> <number>"
+        "usage": "!add <number> <number> <number> <number>"
     },
     {
         "id": 7,
@@ -61,23 +61,23 @@
         "description": "Subtract two or more numbers together. Up to 4",
         "permissions": "everyone",
         "type": "Math command",
-        "usage": "!subtraction <number> <number> <number> <number>"
+        "usage": "!subtract <number> <number> <number> <number>"
     },
     {
         "id": 8,
-        "name": "multiplication",
+        "name": "multiply",
         "description": "Multiply two or more numbers together. Up to 10",
         "permissions": "everyone",
         "type": "Math command",
-        "usage": "!multiplication <number> <number> <number> <number>"
+        "usage": "!multiply <number> <number> <number> <number>"
     },
     {
         "id": 9,
-        "name": "division",
+        "name": "divide",
         "description": "Divide two numbers together.",
         "permissions": "everyone",
         "type": "Math command",
-        "usage": "!division <number> <number> <number> <number>"
+        "usage": "!divide <number> <number> <number> <number>"
     },
     {
         "id": 10,
@@ -150,6 +150,30 @@
         "permissions": "Manage messages",
         "type": "Moderation command",
         "usage": "!purge <number>"
+    },
+    {
+        "id": 19,
+        "name": "Bakuschedule",
+        "description": "What is bakugo doing right now? Find out! He is a busy guy!",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!Bakuschedule"
+    },
+    {
+        "id": 20,
+        "name" : "twentyscore",
+        "description": "Check the winning score of the 20 questions games you have played with bakugo{ironically this is id 20 in the command json}",
+        "permissions": "everyone",
+        "type": "Fun command",
+        "usage": "!twentyscore"
+    },
+    {
+        "id" : 21,
+        "name" : "modulo",
+        "description" : "Get the modulo of two numbers.",
+        "permissions" : "everyone",
+        "type" : "Math command",
+        "usage" : "!modulo <number> <number>"
     }
     
 
