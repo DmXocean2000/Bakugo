@@ -28,7 +28,7 @@ async function askBakugo(userMessages) {
     ],
     temperature: .7,          // 🔥 More spicy responses. increase for more spice, decrease for less spice 0.0 -> 2.0. .7 is the smoothiest
     frequency_penalty: 0.5,   // 🔥 Reduce repeated words like "Deku" 5 times in a row. higher means less repeats, lower means less repeats. 0.0 -> 2.0
-    presence_penalty: 0.3,    // 🔥 Encourage Bakugo to explore new topics slightly. Higher = less repeats, lower means more repeats. 0.0 -> 2.0
+    presence_penalty: 0.8,    // 🔥 Encourage Bakugo to explore new topics slightly. Higher = less repeats, lower means more repeats. 0.0 -> 2.0
     max_tokens: 500,          // 🔥 Max length of Bakugo's rants higher = 
   });
 
