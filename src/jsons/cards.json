@@ -1,0 +1,104 @@
+{
+  "students": {
+    "Yuga Aoyama": {
+      "tier": "student",
+      "special_name": "Navel Laser",
+      "flavor_text": "✨ Sparkling! Can't stop twinkling! ✨"
+    },
+    "Mina Ashido": {
+      "tier": "student",
+      "special_name": "Acid Veil",
+      "flavor_text": "Acid splashes everywhere!"
+    },
+    "Tsuyu Asui": {
+      "tier": "student",
+      "special_name": "Froppy Style",
+      "flavor_text": "Ribbit! Maximum tongue power!"
+    },
+    "Tenya Iida": {
+      "tier": "student",
+      "special_name": "Recipro Burst",
+      "flavor_text": "Engine boost to maximum!"
+    },
+    "Ochaco Uraraka": {
+      "tier": "student",
+      "special_name": "Zero Gravity",
+      "flavor_text": "Release! Meteor shower!"
+    },
+    "Mashirao Ojiro": {
+      "tier": "student",
+      "special_name": "Tail Tornado",
+      "flavor_text": "Martial arts mastery!"
+    },
+    "Denki Kaminari": {
+      "tier": "student",
+      "special_name": "Indiscriminate Shock",
+      "flavor_text": "1.3 million volts! YEAAAAH!"
+    },
+    "Eijiro Kirishima": {
+      "tier": "student",
+      "special_name": "Red Riot Unbreakable",
+      "flavor_text": "So manly! Unbreakable!"
+    },
+    "Koji Koda": {
+      "tier": "student",
+      "special_name": "Anivoice",
+      "flavor_text": "Nature's wrath unleashed!"
+    },
+    "Rikido Sato": {
+      "tier": "student",
+      "special_name": "Sugar Rush",
+      "flavor_text": "Sugar power! Five times stronger!"
+    },
+    "Mezo Shoji": {
+      "tier": "student",
+      "special_name": "Octoblow",
+      "flavor_text": "Multiple arms, maximum impact!"
+    },
+    "Kyoka Jiro": {
+      "tier": "student",
+      "special_name": "Heartbeat Fuzz",
+      "flavor_text": "Sound amplification to the max!"
+    },
+    "Hanta Sero": {
+      "tier": "student",
+      "special_name": "Tape Trap",
+      "flavor_text": "You're all wrapped up!"
+    },
+    "Fumikage Tokoyami": {
+      "tier": "student",
+      "special_name": "Dark Shadow Rampage",
+      "flavor_text": "Dark Shadow goes berserk!"
+    },
+    "Shoto Todoroki": {
+      "tier": "student",
+      "special_name": "Half-Cold Half-Hot",
+      "flavor_text": "Ice and fire combine!"
+    },
+    "Toru Hagakure": {
+      "tier": "student",
+      "special_name": "Warp Refraction",
+      "flavor_text": "Blinding light burst!"
+    },
+    "Katsuki Bakugo": {
+      "tier": "student",
+      "special_name": "Howitzer Impact",
+      "flavor_text": "DIE! MASSIVE EXPLOSION!"
+    },
+    "Izuku Midoriya": {
+      "tier": "student",
+      "special_name": "Detroit Smash",
+      "flavor_text": "One For All 100%! SMASH!"
+    },
+    "Minoru Mineta": {
+      "tier": "student",
+      "special_name": "Grape Rush",
+      "flavor_text": "Super sticky ball barrage!"
+    },
+    "Momo Yaoyorozu": {
+      "tier": "student",
+      "special_name": "Creation Cannon",
+      "flavor_text": "Ultimate weapon created!"
+    }
+  }
+}
