@@ -1,0 +1,28 @@
+{
+  "battles": {
+    "Shoto Todoroki vs Mashirao Ojiro": {
+      "winner": "Shoto Todoroki",
+      "dialogue": [
+        "Ojiro tries his best with Tail Tornado!",
+        "But Todoroki's ice instantly freezes everything!",
+        "It's over in seconds!"
+      ]
+    },
+    "Izuku Midoriya vs Katsuki Bakugo": {
+      "winner": "draw",
+      "dialogue": [
+        "DAMN IT! ME AND DEKU ARE EQUAL!",
+        "Explosion after smash, neither giving ground!",
+        "Both collapse simultaneously! NO ONE WINS!"
+      ]
+    },
+    "All Might vs Nomu": {
+      "winner": "All Might",
+      "dialogue": [
+        "300 punches! No, MORE!",
+        "PLUS ULTRA!!!",
+        "Nomu is sent flying!"
+      ]
+    }
+  }
+}
