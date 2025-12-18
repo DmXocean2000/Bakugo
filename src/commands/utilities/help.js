@@ -80,6 +80,8 @@ function buildCommandHelp(alias) {
 module.exports = {
   name: 'help',
   description: 'Shows general help or command-specific info.',
+  legacy: true,  // <-- ADD THIS
+  slash: true,   // <-- ADD THIS
   devOnly: false,
   ownerOnly: false,
 
@@ -94,7 +96,8 @@ module.exports = {
         .setRequired(false)
     ),
 
-  async execute(message, args) {
+  async execute({message, args}) {
+    //const input = (args[0] || '').toLowerCase();
     const input = (args.join('').split('undefined')[0] || '').toLowerCase();
     const embed = input ? buildCommandHelp(input) : buildGeneralHelp();
 
