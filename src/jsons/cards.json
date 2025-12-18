@@ -100,5 +100,137 @@
       "special_name": "Creation Cannon",
       "flavor_text": "Ultimate weapon created!"
     }
+  },
+  "special_characters": {
+    "All Might": {
+      "tier": "symbol",
+      "special_name": "United States of Smash",
+      "flavor_text": "GO BEYOND! PLUS ULTRA!!!"
+    },
+    "Shota Aizawa": {
+      "tier": "pro",
+      "special_name": "Erasure",
+      "flavor_text": "Your quirk is mine to erase!"
+    },
+    "Present Mic": {
+      "tier": "pro",
+      "special_name": "DJ PUNCH",
+      "flavor_text": "YEEEEEAAAHHHHH! Maximum volume!"
+    },
+    "Endeavor": {
+      "tier": "pro",
+      "special_name": "Prominence Burn",
+      "flavor_text": "BURN TO ASH!"
+    },
+    "Hawks": {
+      "tier": "pro",
+      "special_name": "Fierce Wings",
+      "flavor_text": "Too fast for you!"
+    },
+    "Best Jeanist": {
+      "tier": "pro",
+      "special_name": "Fiber Master",
+      "flavor_text": "Your clothes betray you!"
+    },
+    "Mirko": {
+      "tier": "pro",
+      "special_name": "Luna Fall",
+      "flavor_text": "Rabbit season!"
+    },
+    "Gran Torino": {
+      "tier": "pro",
+      "special_name": "Jet Propulsion",
+      "flavor_text": "Still got it at my age!"
+    },
+    "Mt. Lady": {
+      "tier": "pro",
+      "special_name": "Canyon Cannon",
+      "flavor_text": "Size does matter!"
+    },
+    "Gang Orca": {
+      "tier": "pro",
+      "special_name": "Orca Cry",
+      "flavor_text": "Sonic devastation!"
+    },
+    "Tomura Shigaraki": {
+      "tier": "villain",
+      "special_name": "Decay",
+      "flavor_text": "Everything I touch crumbles!"
+    },
+    "All For One": {
+      "tier": "villain",
+      "special_name": "Quirk Steal",
+      "flavor_text": "Your power is mine now!"
+    },
+    "Dabi": {
+      "tier": "villain",
+      "special_name": "Cremation",
+      "flavor_text": "Blue flames burn hotter!"
+    },
+    "Himiko Toga": {
+      "tier": "villain",
+      "special_name": "Transform",
+      "flavor_text": "Let me become you! ♥"
+    },
+    "Twice": {
+      "tier": "villain",
+      "special_name": "Sad Man's Parade",
+      "flavor_text": "An army of me!"
+    },
+    "Overhaul": {
+      "tier": "villain",
+      "special_name": "Reconstruction",
+      "flavor_text": "I'll rebuild this world!"
+    },
+    "Stain": {
+      "tier": "vigilante",
+      "special_name": "Bloodcurdle",
+      "flavor_text": "False heroes must die!"
+    },
+    "Mirio Togata": {
+      "tier": "big_three",
+      "special_name": "Phantom Menace",
+      "flavor_text": "POWER!!!"
+    },
+    "Tamaki Amajiki": {
+      "tier": "big_three",
+      "special_name": "Chimera Kraken",
+      "flavor_text": "I want to go home..."
+    },
+    "Nejire Hado": {
+      "tier": "big_three",
+      "special_name": "Wave Motion",
+      "flavor_text": "Spiraling energy!"
+    },
+    "Hitoshi Shinso": {
+      "tier": "student",
+      "special_name": "Brainwash",
+      "flavor_text": "Answer me..."
+    },
+    "Mei Hatsume": {
+      "tier": "student",
+      "special_name": "Baby Explosion",
+      "flavor_text": "Check out my babies!"
+    },
+    "Edgeshot": {
+      "tier": "top_hero",
+      "special_name": "Ninpo: Thousand Sheet Pierce",
+      "flavor_text": "Faster than sound!"
+    },
+    "Kamui Woods": {
+      "tier": "pro",
+      "special_name": "Lacquered Chain Prison",
+      "flavor_text": "Arbor lock!"
+    },
+    "Fatgum": {
+      "tier": "pro",
+      "special_name": "Fat Absorption",
+      "flavor_text": "BMI HERO!"
+    },
+    "Ryukyu": {
+      "tier": "pro",
+      "special_name": "Dragon Form",
+      "flavor_text": "Feel the dragon's wrath!"
+    }
   }
 }
