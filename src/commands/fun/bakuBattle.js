@@ -4,7 +4,7 @@ const canonBattles = require('../../jsons/canon_battles.json');
 
 // Battle constants
 const SPECIAL_SUCCESS_THRESHOLD = 4;
-const SPECIAL_MULTIPLIER = 3;
+const SPECIAL_MULTIPLIER = 8; // Changed from 3 to 8
 const RECOIL_DAMAGE = 5;
 const HP_MULTIPLIER = 10;
 const BATTLE_TIMEOUT = 300000; // 5 minutes
@@ -13,6 +13,7 @@ const MAX_MESSAGE_LENGTH = 1900; // Leave buffer for Discord's 2000 char limit
 // DEV MODE TEST TEAMS - Edit these whenever you need to test specific cards
 // Special characters (from cards.special_characters) get higher stats and die after one kill
 // Students (from cards.students) have normal stats
+/*
 const DEV_PLAYER_CARDS = [
   { name: "Shoto Todoroki", power: 2 },
   { name: "Izuku Midoriya", power: 2 },
@@ -23,7 +24,7 @@ const DEV_BAKUGO_CARDS = [
   { name: "Minoru Mineta", power: 2 },
   { name: "Denki Kaminari", power: 2 },
   { name: "Mashirao Ojiro", power: 2 }
-];
+];*/
 
 // Utility functions
 function randInt(min, max) {
@@ -112,9 +113,8 @@ function assignRandomCards(count) {
       
       // Special characters get 3-5 power, students get 1-3
       const power = isSpecial ? randInt(3, 5) : randInt(1, 3);
-      // Special characters get 1.5x HP multiplier
-      const hpMultiplier = isSpecial ? 15 : HP_MULTIPLIER;
-      const maxHp = power * hpMultiplier;
+      // Everyone uses the same HP multiplier now
+      const maxHp = power * HP_MULTIPLIER;
       
       selected.push({
         name: character,
@@ -165,9 +165,8 @@ function createDevCards(devCardArray) {
     const characterData = isSpecial ? cards.special_characters[name] : cards.students[name];
     
     if (characterData) {
-      // Special characters get 1.5x HP multiplier
-      const hpMultiplier = isSpecial ? 15 : HP_MULTIPLIER;
-      const maxHp = power * hpMultiplier;
+      // Everyone uses the same HP multiplier now
+      const maxHp = power * HP_MULTIPLIER;
       
       selected.push({
         name: name,
@@ -258,7 +257,7 @@ function formatBattleStart(playerTeam, bakugoTeam, mode) {
   // Only show legend if there are special characters
   const hasSpecial = [...playerTeam, ...bakugoTeam].some(card => card.is_special);
   if (hasSpecial) {
-    description += "\n✨ = Special Character (Higher stats, dies after one kill)";
+    description += "\n✨ = Special Character (Higher power, dies after one kill)";
   }
   
   return description;
@@ -517,11 +516,12 @@ async function showBattleStatus(battle, channel) {
 }
 
 async function checkBattleEnd(battle, channel) {
-  const playerAlive = getAliveCards(battle.playerTeam);
-  const bakugoAlive = getAliveCards(battle.bakugoTeam);
+  // Capture initial defeat states before any exhaustion happens
+  const playerWasDefeated = battle.activePlayerCard.hp <= 0;
+  const bakugoWasDefeated = battle.activeBakugoCard.hp <= 0;
   
-  // Check if player's card was defeated
-  if (battle.activePlayerCard.hp <= 0) {
+  // Handle player defeat
+  if (playerWasDefeated) {
     await channel.send(`💥 ${battle.activePlayerCard.name} is defeated!`);
     
     // If Bakugo's special character won, it exhausts and dies too
@@ -531,8 +531,8 @@ async function checkBattleEnd(battle, channel) {
     }
   }
   
-  // Check if Bakugo's card was defeated
-  if (battle.activeBakugoCard.hp <= 0) {
+  // Handle Bakugo defeat (only announce if they died from damage, not exhaustion)
+  if (bakugoWasDefeated) {
     await channel.send(`💥 ${battle.activeBakugoCard.name} is defeated!`);
     
     // If player's special character won, it exhausts and dies too
@@ -690,6 +690,7 @@ module.exports = {
   
   async execute({ message, args }) {
     // Check for dev mode
+    /*
     if (args[0] === 'dev') {
       if (!global.config.devIDs.includes(message.author.id)) {
         return message.reply("YOU'RE NOT A DEV! NICE TRY, EXTRA!");
@@ -713,7 +714,7 @@ module.exports = {
       await message.channel.send("🔧 **DEV MODE ACTIVATED** 🔧\nUsing hardcoded test teams!");
       await runBattle(message.channel, message.author, mode, 0, playerCards, bakugoCards);
       return;
-    }
+    }*/
 
     // Normal mode
     let mode, cardCount;
