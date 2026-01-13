@@ -26,6 +26,7 @@ module.exports = {
       `Here's a little tip: just type \`!di\` with no number and I’ll assume you want 6 sides. Otherwise, learn to count.`,
       `Do you even know what a number is? If you’re considered bright then I’m considered the number one hero! Moron!`,
       `I'm sorry your education failed you. Please consult your local school board.`,
+      `Let me contact UA to see if they have a class designed for failures like you. I wonder if the letter F will fulfil the role.`
     ];
 
     let input;
