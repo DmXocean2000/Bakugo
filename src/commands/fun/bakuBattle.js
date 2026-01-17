@@ -14,7 +14,9 @@ const CONFIG = {
   ULTIMATE_RECOIL: 15,
   SPECIAL_SPAWN_RATE: 0.1, // 10%
   SPECIAL_POWER_RANGE: [2, 4],
-  STUDENT_POWER_RANGE: [1, 3]
+  STUDENT_POWER_RANGE: [1, 3],
+  BAKUGO_ULTIMATE_CHANCE: 0.15, // 15% chance
+  BAKUGO_SPECIAL_CHANCE: 0.30  // 30% chance
 };
 
 const SPECIAL_THRESHOLDS = [4, 5, 6, 7]; // 4+, 5+, 6, auto-fail
@@ -142,7 +144,7 @@ const MINETA_RULES = {
   'Minoru Mineta vs Minoru Mineta': {
     result: 'draw',
     dialogue: [
-      "Two Minetas face each other...",
+            "Two Minetas face each other...",
       "OCEAN GET OVER HERE!!!! WHAT THE HELL IS THIS?!",
       "I'M NOT WASTING MY TIME AND CODE AND COMPUTE SPACE ON THIS GRAPE-FLAVORED DUMPSTERFIRE!!",
       "You know what? SCREW IT! They're both disqualified for crimes against humanity!",
@@ -162,13 +164,12 @@ const MINETA_RULES = {
       "HE LOSES BY JUST BEING HIMSELF! WHAT A DAMN EMBARRASSMENT!!",
       "SHOJI DO NOT RESCUING HIM THIS TIME!! I'M NOT EITHER!!",
       "Also. Ocean! Im COMING FOR YOU NEXT FOR MAKING THIS STUPID COMMAND!!",
-
     ]
   },
   '* vs Minoru Mineta': {
     result: 'attacker_wins',
     dialogue: (attacker) => [
-      "Mineta starts panicking and throws his sticky balls. Does this ever work? According to ChatGPT, the answer is NO!",
+            "Mineta starts panicking and throws his sticky balls. Does this ever work? According to ChatGPT, the answer is NO!",
       "Claude would also like to point out that this is an insane waste of code and compute resources.",
       `${attacker} and I are just... staring at this absolute trainwreck.`,
       "Sipping Dr pepper and waiting for it to end.",
@@ -203,7 +204,7 @@ function checkCanonBattle(card1, card2) {
 
 // ==================== COMBAT SYSTEM ====================
 class CombatSystem {
-  static async attack(attacker, defender, batcher, type = 'normal') {
+  static attack(attacker, defender, batcher, type = 'normal') {
     const roll = rollDice();
     let damage;
     
@@ -280,9 +281,14 @@ function formatBattleStart(playerTeam, bakugoTeam, mode) {
     let str = `**${label}:**\n`;
     team.forEach((card, i) => {
       const special = card.is_special ? " ✨" : "";
-      const stats = mode === 3 && label.includes('BAKUGO') ? "[HP: ???]" : 
-                   mode === 2 && label.includes('BAKUGO') ? `[HP: ???]` :
-                   `[Power: ${card.power}] [HP: ${card.hp}/${card.maxHp}]`;
+      let stats;
+      if (mode === 3 && label.includes('BAKUGO')) {
+        stats = "[HP: ???]";
+      } else if (mode === 2 && label.includes('BAKUGO')) {
+        stats = `[HP: ${card.hp}/${card.maxHp}]`;
+      } else {
+        stats = `[Power: ${card.power}] [HP: ${card.hp}/${card.maxHp}]`;
+      }
       str += `${i + 1}. ${card.name}${special} ${stats}\n`;
     });
     return str;
@@ -304,7 +310,7 @@ function createBattleStatusEmbed(battle) {
     const special = card.is_special ? " ✨" : "";
     const ultimate = canUseUltimate(card) ? " ⚡" : "";
     return showStats ? 
-      `${card.name}${special}${ultimate}\nHP: ${card.hp}/${card.maxHp}\nPower: ${card.power}\nSpecials Used: ${card.special_attempts}` :
+      `${card.name}${special}${ultimate}\nHP: ${card.hp}/${card.maxHp}\nPower: ${card.power}\nSpecial Attempts: ${card.special_attempts}` :
       `${card.name}${special}${ultimate}\nHP: ???\nPower: ???`;
   };
   
@@ -376,9 +382,15 @@ class BattleStateMachine {
     }
     
     this.battle.activePlayerCard = selectedCard;
-    this.battle.activeBakugoCard = getAliveCards(this.battle.bakugoTeam)[0];
     
-    // Check special battle conditions
+    // If Bakugo doesn't have an active card, select one
+    if (!this.battle.activeBakugoCard || this.battle.activeBakugoCard.hp <= 0) {
+      const aliveBakugoCards = getAliveCards(this.battle.bakugoTeam);
+      this.battle.activeBakugoCard = aliveBakugoCards[0];
+      await this.channel.send(`Bakugo sends out ${this.battle.activeBakugoCard.name}! LETS GOOOO!`);
+    }
+    
+    // Check special battle conditions with the new matchup
     const minetaCheck = checkMinetaFilter(this.battle.activePlayerCard, this.battle.activeBakugoCard);
     if (minetaCheck) {
       await this.handleInstantBattle(minetaCheck);
@@ -404,7 +416,7 @@ class BattleStateMachine {
     } else if (result.instant_result === "defender_wins") {
       this.battle.activePlayerCard.hp = 0;
     } else if (result.instant_result === "draw") {
-      // Draw result - both cards are eliminated
+      // Both die
       this.battle.activePlayerCard.hp = 0;
       this.battle.activeBakugoCard.hp = 0;
     }
@@ -464,10 +476,11 @@ class BattleStateMachine {
       return;
     }
     
-    await CombatSystem.attack(this.battle.activePlayerCard, this.battle.activeBakugoCard, batcher, input);
+    CombatSystem.attack(this.battle.activePlayerCard, this.battle.activeBakugoCard, batcher, input);
     await batcher.flush();
     
-    if (this.battle.activeBakugoCard.hp <= 0) {
+    // Check if either card died (defender from damage OR attacker from recoil)
+    if (this.battle.activePlayerCard.hp <= 0 || this.battle.activeBakugoCard.hp <= 0) {
       await this.checkBattleEnd();
       return;
     }
@@ -489,11 +502,11 @@ class BattleStateMachine {
   }
   
   async executeBakugoTurn(batcher) {
-    const useUltimate = canUseUltimate(this.battle.activeBakugoCard) && Math.random() > 0.85;
-    const useSpecial = !useUltimate && Math.random() > 0.7;
+    const useUltimate = canUseUltimate(this.battle.activeBakugoCard) && Math.random() < CONFIG.BAKUGO_ULTIMATE_CHANCE;
+    const useSpecial = !useUltimate && Math.random() < CONFIG.BAKUGO_SPECIAL_CHANCE;
     const type = useUltimate ? 'ultimate' : useSpecial ? 'special' : 'normal';
     
-    await CombatSystem.attack(this.battle.activeBakugoCard, this.battle.activePlayerCard, batcher, type);
+    CombatSystem.attack(this.battle.activeBakugoCard, this.battle.activePlayerCard, batcher, type);
   }
   
   async promptPlayerAction() {
@@ -573,27 +586,27 @@ class BattleStateMachine {
   }
   
   async handleNextRound(playerAlive, bakugoAlive) {
+    // Handle player needing to select a new card
     if (this.battle.activePlayerCard.hp <= 0) {
       await this.channel.send("Choose your next fighter:");
       await this.channel.send(playerAlive.map((c, i) => `${i + 1}. ${c.name} [HP: ${c.hp}/${c.maxHp}]`).join('\n'));
       this.battle.state = 'SELECT_CARD';
+      this.battle.activeBakugoCard = null; // Clear so handleCardSelection will assign new Bakugo card
+      return;
     }
     
+    // Handle Bakugo needing a new card (player's card is still alive)
     if (this.battle.activeBakugoCard.hp <= 0) {
       this.battle.activeBakugoCard = bakugoAlive[0];
       await this.channel.send(`Bakugo sends out ${this.battle.activeBakugoCard.name}! LETS GOOOO!`);
       
-      // If player also needs to pick, just wait for their selection
-      if (this.battle.activePlayerCard.hp <= 0) return;
-      
-      // Check for canon battles with new Bakugo card
+      // Check for instant battles with new Bakugo card
       const canonResult = checkCanonBattle(this.battle.activePlayerCard.name, this.battle.activeBakugoCard.name);
       if (canonResult) {
         await this.handleCanonBattle(canonResult);
         return;
       }
       
-      // Check for Mineta filter with new Bakugo card
       const minetaCheck = checkMinetaFilter(this.battle.activePlayerCard, this.battle.activeBakugoCard);
       if (minetaCheck) {
         await this.handleInstantBattle(minetaCheck);
