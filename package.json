@@ -8,7 +8,9 @@
     "deploy:global": "node src/deploy-global.js",
     "nuke": "node src/nuke-commands.js",
     "start": "node src/bakugo.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +21,8 @@
     "mongoose": "^8.13.2",
     "node-fetch": "^2.7.0",
     "openai": "^4.95.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2"
   }
 }

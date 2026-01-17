@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require("discord.js");
+//const { SlashCommandBuilder } = require("discord.js");
 const { MessageFlags } = require('discord.js');
 module.exports = {
   name: "root",
