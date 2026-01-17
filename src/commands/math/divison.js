@@ -1,6 +1,6 @@
 const { ApplicationCommandOptionType } = require("discord.js");
 const { MessageFlags } = require('discord.js');
-const { aliases } = require("./addition");
+//const { aliases } = require("./addition");
 module.exports = {
   name: "divide",
   description: "Divides numbers. Try not to divide by zero, idiot.",

@@ -1,5 +1,5 @@
 const logError = require('../utils/logError');
-const { messageFlags } = require('discord.js');
+const { MessageFlags } = require('discord.js');
 
 module.exports = (client) => {
   client.on('interactionCreate', async (interaction) => {

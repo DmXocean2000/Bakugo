@@ -42,14 +42,14 @@ module.exports = {
 
   async execute({ message, args }) {
     const rawAmount = parseInt(args[0], 10);
-    const amount = rawAmount + 1; // +1 to also delete the command itself
+    //const amount = rawAmount + 1; // +1 to also delete the command itself
 
     if (isNaN(rawAmount) || rawAmount < 1 || rawAmount > 99) {
       return message.reply("Tch. Pick a number between 1 and 99, extra.");
     }
 
     try {
-      const deleted = await message.channel.bulkDelete(amount, true);
+      //const deleted = await message.channel.bulkDelete(amount, true);
 
       if (rawAmount === 1) {
         await message.channel.send("You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?");
@@ -77,7 +77,7 @@ module.exports = {
     }
 
     try {
-      const deleted = await interaction.channel.bulkDelete(amount, true);
+      //const deleted = await interaction.channel.bulkDelete(amount, true);
 
       if (amount === 1) {
         await interaction.followUp({
