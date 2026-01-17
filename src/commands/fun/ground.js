@@ -21,7 +21,7 @@ module.exports = {
     },
   ],
 
-  execute: async ({ args, interaction, message }) => {
+  execute: async ({ interaction, message }) => {
     let targetUser, authorId;
 
     // Get info from slash
