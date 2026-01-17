@@ -18,7 +18,7 @@ module.exports = {
     }
   ],
 
-  async execute({ message, interaction, args }) {
+  async execute({ message, interaction }) {
     const isInteraction = Boolean(interaction);
     const user = isInteraction 
       ? interaction.options.getUser('user') || interaction.user 

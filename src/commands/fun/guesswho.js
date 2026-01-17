@@ -1,4 +1,4 @@
-const { MessageFlags } = require('discord.js');
+//const { MessageFlags } = require('discord.js');
 const path = require('path');
 const fs = require('fs');
 const characterData = require('../../jsons/mha_characters.json');
