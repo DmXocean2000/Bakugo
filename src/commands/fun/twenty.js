@@ -1,4 +1,4 @@
-const { ApplicationCommandOptionType } = require("discord.js");
+//const { ApplicationCommandOptionType } = require("discord.js");
 const characterData = require('../../jsons/mha_characters.json');
 const mongoose = require("mongoose");
 const twentyScoreCountSchema = require("../../models/twentyScoreCountSchema");
