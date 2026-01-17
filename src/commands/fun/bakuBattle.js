@@ -404,7 +404,7 @@ class BattleStateMachine {
     } else if (result.instant_result === "defender_wins") {
       this.battle.activePlayerCard.hp = 0;
     } else if (result.instant_result === "draw") {
-      // Both die
+      // Draw result - both cards are eliminated
       this.battle.activePlayerCard.hp = 0;
       this.battle.activeBakugoCard.hp = 0;
     }
