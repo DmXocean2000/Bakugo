@@ -143,24 +143,41 @@ const MINETA_RULES = {
     result: 'draw',
     dialogue: [
       "Two Minetas face each other...",
-      "WHAT THE HELL IS THIS?!",
-      "I'M NOT WASTING MY TIME AND CODE ON THIS GRAPE-FLAVORED DUMPSTERFIRE!! EVERYONE GOES TO HELL!!"
+      "OCEAN GET OVER HERE!!!! WHAT THE HELL IS THIS?!",
+      "I'M NOT WASTING MY TIME AND CODE AND COMPUTE SPACE ON THIS GRAPE-FLAVORED DUMPSTERFIRE!!",
+      "You know what? SCREW IT! They're both disqualified for crimes against humanity!",
+      "Take good notes users, this is what happens when YOU DON'T KNOW WHAT NO MEANS!",
+      "EVERYONE GOES TO HELL!!",
+      "Ocean owes me a Dr Pepper for this!",
+      "Screw it! Im taking it from Claude. Not like that bot needs it. It has 100 billion weights anyway!"
     ]
   },
   'Minoru Mineta vs *': {
     result: 'defender_wins',
     dialogue: (defender) => [
-      "Really?! This is what I get when I made this command?!",
-      `${defender} doesn't even NEED to move!`,
-      "HE LOSES BY JUST BEING HIMSELF! WHAT A DAMN EMBARRASSMENT!! SHOJI NO RESCUING HIM THIS TIME!!"
+      "Oh COME ON! Really?! THIS is what I get for making this command?!",
+      `${defender} doesn't even NEED to lift a finger!`,
+      "Mineta trips over his excuses and knocks himself out! What a joke of a character!",
+      "You deserve this honestly.",
+      "HE LOSES BY JUST BEING HIMSELF! WHAT A DAMN EMBARRASSMENT!!",
+      "SHOJI DO NOT RESCUING HIM THIS TIME!! I'M NOT EITHER!!",
+      "Also. Ocean! Im COMING FOR YOU NEXT FOR MAKING THIS STUPID COMMAND!!",
+
     ]
   },
   '* vs Minoru Mineta': {
     result: 'attacker_wins',
     dialogue: (attacker) => [
       "Mineta starts panicking and throws his sticky balls. Does this ever work? According to ChatGPT, the answer is NO!",
-      `${attacker} and I are staring at this embarrassment while Mineta self-implodes because he remembered that Kenji Tsuragamae installed an ankle monitor—and he just triggered it.`,
-      "I REALLY don't know what's a bigger mistake—letting Ocean make this a thing, or this whole damn battle!!"
+      "Claude would also like to point out that this is an insane waste of code and compute resources.",
+      `${attacker} and I are just... staring at this absolute trainwreck.`,
+      "Sipping Dr pepper and waiting for it to end.",
+      "OH WAIT—Mineta just remembered Kenji Tsuragamae installed an ankle monitor on him!",
+      "BEEP BEEP BEEP Aaaaaand he just triggered it. Perfect.",
+      "Mineta is escorted out by the police. Well, that was easy.",
+      "I think I hear Jiro laughing. Hell yeah. at least something is done right.",
+      "I REALLY don't know what's a bigger mistake—letting Ocean make this a thing, or this whole damn battle!!",
+      "I can't believe I have to deal with THIS garbage! Ocean, you're dead to me!"
     ]
   }
 };
