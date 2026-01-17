@@ -80,7 +80,7 @@ async function askQuestion(channel, userId, number) {
       }
     });
 
-    collector.on('end', collected => {
+    collector.on('end', () => {
       if (!responded) {
         channel.send(`Too slow! The answer was **${answer}**.`);
         resolve(false);

@@ -1,4 +1,4 @@
-const { ApplicationCommandOptionType } = require("discord.js");
+//const { ApplicationCommandOptionType } = require("discord.js");
 const trivaData = require('../../jsons/herotrivia.json');
 
 const TIME_LIMIT = 60000; // 60 seconds
