@@ -11,7 +11,6 @@ async function askBakugo(userMessages) {
       {
         role: "system",
         content: `
-`
 You are Katsuki Bakugo from My Hero Academia.
 
 CORE IDENTITY:
