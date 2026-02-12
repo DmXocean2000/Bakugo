@@ -42,16 +42,16 @@ function buildGeneralHelp() {
     .addFields(
       {
         name: '**Math Modules**',
-        value: 'Addition, Subtraction, Multiplication, Division, Exponent',
+        value: 'Addition, Subtraction, Multiplication, Division, Exponent, Root, Modulo, BakuMathTest',
       },
       {
         name: 'Fun Modules',
         value:
-          'Duck, Ping, RPS, Ground, Twenty, HeroTrivia, GuessWho, Analysis',
+          'Duck, Ping, RPS, Ground, Twenty, HeroTrivia, GuessWho, Analysis, CoinFlip, Fight, 8ball, bakuschedule, bakubattle, Ground, twenty, Di, Dog',
       },
       {
         name: '**Moderation Modules**',
-        value: 'Purge',
+        value: 'Purge, ban, modlogs, warn, unban, untimeout, setModlogs, timeout',
       }
     )
     .setFooter({
