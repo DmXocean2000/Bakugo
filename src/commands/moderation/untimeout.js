@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
 const createModLog = require('../../utils/createModLog');
+const resolveTarget = require('../../utils/resolveTarget');
 
 const responses = [
   "Fine! You can talk again. Don't make me regret it!",
@@ -38,8 +39,8 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers),
 
   async execute({ message, args }) {
-    const target = message.mentions.members.first();
-    if (!target) return message.reply("Tch. Mention someone to untimeout, idiot.");
+    const target = await resolveTarget(message.guild, args[0]);
+    if (!target) return message.reply("Tch. Give me a valid mention or user ID, idiot.");
 
     if (!target.isCommunicationDisabled()) {
       return message.reply("That person isn't even timed out. What are you doing?");
