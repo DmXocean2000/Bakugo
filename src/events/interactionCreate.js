@@ -1,8 +1,10 @@
 const logError = require('../utils/logError');
+const isWhitelisted = require('../utils/isWhiteListed.js');
 const { MessageFlags } = require('discord.js');
 
 module.exports = (client) => {
   client.on('interactionCreate', async (interaction) => {
+    if (!isWhitelisted(interaction.guild?.id)) return;
     // 🔍 Autocomplete
     if (interaction.isAutocomplete()) {
       const command = client.commands.get(interaction.commandName);
