@@ -14,6 +14,7 @@ module.exports = {
     ],
   
     async execute({ message, args }) {
+      if (!args[0]) return message.reply("Tch. You need to choose rock, paper, or scissors. Example: `!rps rock`");
       const declare = args[0];
       const choice = declare.toLowerCase();
       const acceptedReplies = ['rock', 'paper', 'scissors'];
@@ -55,6 +56,7 @@ module.exports = {
     },
   
     async slashExecute(interaction) {
+      if (!interaction.options.getString('choice')) return interaction.reply({ content: "Tch. You need to choose rock, paper, or scissors. Example: `/rps choice:rock`", flags: MessageFlags.Ephemeral });
       const choice = interaction.options.getString('choice').toLowerCase();
       const acceptedReplies = ['rock', 'paper', 'scissors'];
       const random = Math.floor((Math.random() * acceptedReplies.length));
