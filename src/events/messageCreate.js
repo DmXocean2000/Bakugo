@@ -20,7 +20,7 @@ module.exports = (client) => {
 
 
     if (command.ownerOnly && !ownerIDs.includes(message.author.id)) {
-      return message.reply("YOUR NOT MY OWNER! GO TO HELL!");
+      return message.reply("YOU'RE NOT MY OWNER! GO TO HELL!");
     }
 
     if (command.devOnly && !devIDs.includes(message.author.id)) {
