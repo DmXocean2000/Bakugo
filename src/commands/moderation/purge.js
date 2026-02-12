@@ -1,22 +1,22 @@
-const { PermissionFlagsBits, MessageFlags } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 
 const responses = [
-    "Here I am, being the equivalent of a broom, cleaning your mess again.",
-    "You know I'm not your damn janitor, right?",
-    "Cleaning up after your sorry ass again, huh?",
-    "I should charge you for this.",
-    "You really need to clean up after yourself.",
-    "This isn't kindergarten. You can't just throw your trash everywhere.",
-    "You know, I could be doing something more productive than cleaning up your mess.",
-    "You're lucky Ocean pays me to clean up after you.",
-    "I do not get paid enough for this trash.",
-    "Have you ever thought about *not* trashing the chat?",
-    "This isn't Disney's Cinderella — I shouldn't have to clean up after you!",
-    "I'm supposed to be the number one hero, NOT THE NUMBER ONE JANITOR!"
+  "Here I am, being the equivalent of a broom, cleaning your mess again.",
+  "You know I'm not your damn janitor, right?",
+  "Cleaning up after your sorry ass again, huh?",
+  "I should charge you for this.",
+  "You really need to clean up after yourself.",
+  "This isn't kindergarten. You can't just throw your trash everywhere.",
+  "You know, I could be doing something more productive than cleaning up your mess.",
+  "You're lucky Ocean pays me to clean up after you.",
+  "I do not get paid enough for this trash.",
+  "Have you ever thought about *not* trashing the chat?",
+  "This isn't Disney's Cinderella — I shouldn't have to clean up after you!",
+  "I'm supposed to be the number one hero, NOT THE NUMBER ONE JANITOR!",
 ];
 
 function getRandomResponse() {
-    return responses[Math.floor(Math.random() * responses.length)];
+  return responses[Math.floor(Math.random() * responses.length)];
 }
 
 module.exports = {
@@ -31,35 +31,40 @@ module.exports = {
   userPermissions: [PermissionFlagsBits.ManageMessages],
   botPermissions: [PermissionFlagsBits.ManageMessages],
 
-  options: [
-    {
-      name: 'amount',
-      description: 'The number of messages to delete (1-99)',
-      type: 4, // Integer
-      required: true,
-    },
-  ],
+  data: new SlashCommandBuilder()
+    .setName('purge')
+    .setDescription('Delete a bunch of messages quickly!')
+    .addIntegerOption(opt =>
+      opt.setName('amount')
+        .setDescription('Number of messages to delete (1-99)')
+        .setRequired(true)
+        .setMinValue(1)
+        .setMaxValue(99)
+    )
+    .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages),
 
   async execute({ message, args }) {
     const rawAmount = parseInt(args[0], 10);
-    //const amount = rawAmount + 1; // +1 to also delete the command itself
 
     if (isNaN(rawAmount) || rawAmount < 1 || rawAmount > 99) {
       return message.reply("Tch. Pick a number between 1 and 99, extra.");
     }
 
     try {
-      //const deleted = await message.channel.bulkDelete(amount, true);
+      // +1 to include the command message itself
+      const deleted = await message.channel.bulkDelete(rawAmount + 1, true);
 
       if (rawAmount === 1) {
-        await message.channel.send("You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?");
+        const reply = await message.channel.send("You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?");
+        setTimeout(() => reply.delete().catch(() => null), 5000);
       } else {
-        await message.channel.send(getRandomResponse());
+        const reply = await message.channel.send(`${getRandomResponse()} (${deleted.size - 1} messages deleted)`);
+        setTimeout(() => reply.delete().catch(() => null), 5000);
       }
 
     } catch (error) {
       if (error.code === 50013) {
-        return message.reply("Tch. I’m missing the Manage Messages permission, nerd.");
+        return message.reply("Tch. I'm missing the Manage Messages permission, nerd.");
       } else if (error.code === 50034) {
         return message.reply("Those messages are ancient history. I can't delete them.");
       } else {
@@ -72,28 +77,24 @@ module.exports = {
   async slashExecute(interaction) {
     const amount = interaction.options.getInteger('amount');
 
-    if (amount < 1 || amount > 99) {
-      return interaction.reply({ content: "Pick a number between 1 and 99, nerd.", flags: MessageFlags.Ephemeral });
-    }
-
     try {
-      //const deleted = await interaction.channel.bulkDelete(amount, true);
+      const deleted = await interaction.channel.bulkDelete(amount, true);
 
       if (amount === 1) {
-        await interaction.followUp({
+        await interaction.reply({
           content: "You really went through all that trouble just to purge **one** puny message? You know you can shift+delete it, right?",
-          flags: MessageFlags.Ephemeral
+          flags: MessageFlags.Ephemeral,
         });
       } else {
-        await interaction.followUp({
-          content: getRandomResponse(),
-          flags: MessageFlags.Ephemeral
+        await interaction.reply({
+          content: `${getRandomResponse()} (${deleted.size} messages deleted)`,
+          flags: MessageFlags.Ephemeral,
         });
       }
 
     } catch (error) {
       if (error.code === 50013) {
-        return interaction.reply({ content: "Tch. I’m missing the Manage Messages permission, nerd.", flags: MessageFlags.Ephemeral });
+        return interaction.reply({ content: "Tch. I'm missing the Manage Messages permission, nerd.", flags: MessageFlags.Ephemeral });
       } else if (error.code === 50034) {
         return interaction.reply({ content: "Those messages are too old even for me to explode.", flags: MessageFlags.Ephemeral });
       } else {
