@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
+const createModLog = require('../../utils/createModLog');
 
 const responses = [
   "Fine! You can talk again. Don't make me regret it!",
@@ -52,6 +53,14 @@ module.exports = {
 
     try {
       await target.timeout(null, reason);
+      await createModLog({
+        guild: message.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: message.author.id, tag: message.author.tag },
+        action: 'untimeout',
+        reason,
+        client: message.client,
+      });
       await message.reply(`${getRandomResponse()}\n**${target.user.tag}** has been removed from timeout. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'untimeout', error: err, context: { userTag: message.author.tag, targetTag: target.user.tag } });
@@ -77,6 +86,14 @@ module.exports = {
 
     try {
       await target.timeout(null, reason);
+      await createModLog({
+        guild: interaction.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: interaction.user.id, tag: interaction.user.tag },
+        action: 'untimeout',
+        reason,
+        client: interaction.client,
+      });
       await interaction.reply(`${getRandomResponse()}\n**${target.user.tag}** has been removed from timeout. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'untimeout', error: err, context: { userTag: interaction.user.tag, targetTag: target.user.tag } });

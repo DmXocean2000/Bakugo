@@ -35,7 +35,31 @@ module.exports = (client) => {
     if (interaction.isChatInputCommand()) {
       const command = client.commands.get(interaction.commandName);
       if (!command?.slashExecute) return;
+    // 🔒 User permission check
+    if (command.userPermissions?.length) {
+      const missing = command.userPermissions.filter(
+        perm => !interaction.member.permissions.has(perm)
+      );
+      if (missing.length) {
+        return interaction.reply({
+          content: "Tch. You don't have permission to use that command, extra!",
+          flags: MessageFlags.Ephemeral,
+        });
+      }
+    }
 
+    // 🔒 Bot permission check
+    if (command.botPermissions?.length) {
+      const missing = command.botPermissions.filter(
+        perm => !interaction.guild.members.me.permissions.has(perm)
+      );
+      if (missing.length) {
+        return interaction.reply({
+          content: "I'm missing permissions I need for that. Yell at whoever set up my roles!",
+          flags: MessageFlags.Ephemeral,
+        });
+      }
+    }
       try {
         await command.slashExecute(interaction);
       } catch (err) {

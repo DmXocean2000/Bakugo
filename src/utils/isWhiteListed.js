@@ -1,5 +1,5 @@
 // src/utils/isWhitelisted.js → ../../config.js (up to src/, up to bakugo/)
-const { serverWhitelist } = require('../../config.js');
+const { serverWhiteList } = require('../../config.js');
 
 /**
  * Checks if a guild ID is on the server whitelist.
@@ -7,5 +7,5 @@ const { serverWhitelist } = require('../../config.js');
  */
 module.exports = function isWhitelisted(guildId) {
   if (!guildId) return false; // DMs or unknown — deny by default
-  return serverWhitelist.includes(guildId);
+  return serverWhiteList.includes(guildId);
 };

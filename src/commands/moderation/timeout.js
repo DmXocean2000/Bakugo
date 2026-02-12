@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
+const createModLog = require('../../utils/createModLog');
 
 const responses = [
   "SIT DOWN AND SHUT UP! You're in timeout! 💥",
@@ -39,7 +40,6 @@ function parseDuration(str) {
   const ms = val * (multipliers[unit] || 0);
   if (ms <= 0) return null;
 
-  // Discord max timeout: 28 days
   const maxMs = 28 * 86_400_000;
   if (ms > maxMs) return null;
 
@@ -93,16 +93,28 @@ module.exports = {
     if (!ms) {
       return message.reply("Give me a real duration, extra! Examples: `10m`, `2h`, `1d`. Max is 28 days.");
     }
-
+    if (target.id === message.author.id) {
+      return message.reply("Go put yourself in time out by GETTING OFF THE INTERNET, idiot!");
+    }
     if (!target.moderatable) {
       return message.reply("I can't timeout that person. They're either above me or protected. Tch.");
     }
 
     const reason = args.slice(2).join(' ') || 'No reason given. Bakugo decided.';
+    const durationText = formatDuration(ms);
 
     try {
       await target.timeout(ms, reason);
-      await message.reply(`${getRandomResponse()}\n**${target.user.tag}** has been timed out for **${formatDuration(ms)}**. Reason: *${reason}*`);
+      await createModLog({
+        guild: message.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: message.author.id, tag: message.author.tag },
+        action: 'timeout',
+        reason,
+        duration: durationText,
+        client: message.client,
+      });
+      await message.reply(`${getRandomResponse()}\n**${target.user.tag}** has been timed out for **${durationText}**. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'timeout', error: err, context: { userTag: message.author.tag, targetTag: target.user.tag } });
       await message.reply("Something exploded. And not in the good way.");
@@ -117,6 +129,9 @@ module.exports = {
     if (!target) {
       return interaction.reply({ content: "That user isn't in the server, nerd.", flags: MessageFlags.Ephemeral });
     }
+    if (target.id === interaction.user.id) {
+      return interaction.reply({ content: "You are so lucky my boss made this an Ephemeral message, extra! Go put yourself in time out by GETTING OFF THE INTERNET, idiot!", flags: MessageFlags.Ephemeral });
+    }
 
     const ms = parseDuration(durationStr);
     if (!ms) {
@@ -127,9 +142,20 @@ module.exports = {
       return interaction.reply({ content: "I can't timeout that person. They're either above me or protected. Tch.", flags: MessageFlags.Ephemeral });
     }
 
+    const durationText = formatDuration(ms);
+
     try {
       await target.timeout(ms, reason);
-      await interaction.reply(`${getRandomResponse()}\n**${target.user.tag}** has been timed out for **${formatDuration(ms)}**. Reason: *${reason}*`);
+      await createModLog({
+        guild: interaction.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: interaction.user.id, tag: interaction.user.tag },
+        action: 'timeout',
+        reason,
+        duration: durationText,
+        client: interaction.client,
+      });
+      await interaction.reply(`${getRandomResponse()}\n**${target.user.tag}** has been timed out for **${durationText}**. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'timeout', error: err, context: { userTag: interaction.user.tag, targetTag: target.user.tag } });
       await interaction.reply({ content: "Something exploded. And not in the good way.", flags: MessageFlags.Ephemeral });
