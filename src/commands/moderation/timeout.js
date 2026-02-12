@@ -91,7 +91,7 @@ module.exports = {
     }
 
     if (!target.moderatable) {
-      return message.reply("I can't timeout that person. They're either above me or protected. Tch.");
+      return message.reply("I can't timeout that person. They're either above me or protected within the discord world. Tch. What a joke.");
     }
 
     const reason = args.slice(2).join(' ') || 'No reason given. Bakugo decided.';
@@ -134,7 +134,7 @@ module.exports = {
     }
 
     if (!target.moderatable) {
-      return interaction.reply({ content: "I can't timeout that person. They're either above me or protected. Tch.", flags: MessageFlags.Ephemeral });
+      return interaction.reply({ content: "I can't timeout that person. They're either above me or protected within the discord world. Tch. What a joke.", flags: MessageFlags.Ephemeral });
     }
 
     const durationText = formatDuration(ms);

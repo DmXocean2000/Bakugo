@@ -49,7 +49,7 @@ module.exports = {
     }
 
     if (!target.bannable) {
-      return message.reply("I can't ban that person. They're either above me or protected. Tch.");
+      return message.reply("I can't ban that person. They're either above me or protected within the discord world. Tch. What a joke.");
     }
 
     const reason = args.slice(1).join(' ') || 'No reason given. Bakugo decided.';
@@ -84,7 +84,7 @@ module.exports = {
     }
 
     if (!target.bannable) {
-      return interaction.reply({ content: "I can't ban that person. They're either above me or protected. Tch.", flags: MessageFlags.Ephemeral });
+      return interaction.reply({ content: "I can't ban that person. They're either above me or protected within the discord world. Tch. What a joke.", flags: MessageFlags.Ephemeral });
     }
 
     try {
