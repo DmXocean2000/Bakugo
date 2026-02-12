@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags, EmbedBuilder } = require('discord.js');
 const logError = require('../../utils/logError');
 const createModLog = require('../../utils/createModLog');
+const resolveTarget = require('../../utils/resolveTarget');
 
 const responses = [
   "Consider this your WARNING, extra! Next time I won't be so nice! 💥",
@@ -40,8 +41,8 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers),
 
   async execute({ message, args }) {
-    const target = message.mentions.members.first();
-    if (!target) return message.reply("Tch. Mention someone to warn, idiot.");
+    const target = await resolveTarget(message.guild, args[0]);
+    if (!target) return message.reply("Tch. Give me a valid mention or user ID, idiot.");
 
     if (target.user.id === message.author.id) {
       return message.reply("You're trying to warn YOURSELF? Get some self-respect, extra!");
@@ -67,7 +68,6 @@ module.exports = {
         client: message.client,
       });
 
-      // DM the user
       const dmEmbed = new EmbedBuilder()
         .setColor(0xFFFF00)
         .setTitle(`⚠️ Warning — ${message.guild.name}`)
@@ -78,7 +78,7 @@ module.exports = {
         )
         .setTimestamp();
 
-      await target.user.send({ embeds: [dmEmbed] }).catch(() => null); // Silently fail if DMs are closed
+      await target.user.send({ embeds: [dmEmbed] }).catch(() => null);
 
       await message.reply(`${getRandomResponse()}\n**${target.user.tag}** has been warned. (Case #${entry.caseNumber}) Reason: *${reason}*`);
     } catch (err) {
@@ -117,7 +117,6 @@ module.exports = {
         client: interaction.client,
       });
 
-      // DM the user
       const dmEmbed = new EmbedBuilder()
         .setColor(0xFFFF00)
         .setTitle(`⚠️ Warning — ${interaction.guild.name}`)

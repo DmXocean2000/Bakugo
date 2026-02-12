@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
 const createModLog = require('../../utils/createModLog');
+const resolveTarget = require('../../utils/resolveTarget');
 
 const responses = [
   "GET OUT OF HERE, EXTRA! 💥",
@@ -40,15 +41,17 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
   async execute({ message, args }) {
-    const target = message.mentions.members.first();
-    if (!target) return message.reply("Tch. Mention someone to ban, idiot.");
+    const target = await resolveTarget(message.guild, args[0]);
+    if (!target) return message.reply("Tch. Give me a valid mention or user ID, idiot.");
+
+    if (target.user.id === message.author.id) {
+      return message.reply("You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!");
+    }
 
     if (!target.bannable) {
       return message.reply("I can't ban that person. They're either above me or protected. Tch.");
     }
-    if (target.id === message.author.id) {
-      return message.reply("You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!");
-    }
+
     const reason = args.slice(1).join(' ') || 'No reason given. Bakugo decided.';
 
     try {
@@ -75,8 +78,9 @@ module.exports = {
     if (!target) {
       return interaction.reply({ content: "That user isn't in the server, nerd.", flags: MessageFlags.Ephemeral });
     }
-    if (target.id === interaction.user.id) {
-      return interaction.reply({ content: "You are so lucky my boss made this an Ephemeral message, extra! You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!", flags: MessageFlags.Ephemeral });
+
+    if (target.user.id === interaction.user.id) {
+      return interaction.reply({ content: "You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!", flags: MessageFlags.Ephemeral });
     }
 
     if (!target.bannable) {

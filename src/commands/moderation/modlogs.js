@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
 const ModLog = require('../../models/modlogs');
 const logError = require('../../utils/logError');
+const resolveTarget = require('../../utils/resolveTarget');
 
 const ENTRIES_PER_PAGE = 5;
 
@@ -88,7 +89,7 @@ module.exports = {
   name: 'modlog',
   description: 'View the moderation log for a user.',
   category: 'Moderation',
-  aliases: ['infractions', 'history'],
+  aliases: ['infractions', 'history', 'modlog'],
   legacy: true,
   slash: true,
   devOnly: false,
@@ -105,16 +106,16 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers),
 
   async execute({ message, args }) {
-    const target = message.mentions.users.first();
-    if (!target) return message.reply("Tch. Mention someone to look up, extra.");
+    const target = await resolveTarget(message.guild, args[0]);
+    if (!target) return message.reply("Tch. Give me a valid mention or user ID, extra.");
 
     try {
       await showModLog(
         (opts) => message.reply(opts),
         (opts) => message.editReply?.(opts).catch(() => null),
         message.guild.id,
-        target.id,
-        target.tag,
+        target.user.id,
+        target.user.tag,
         message.author.id,
       );
     } catch (err) {

@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
 const createModLog = require('../../utils/createModLog');
+const resolveTarget = require('../../utils/resolveTarget');
 
 const responses = [
   "SIT DOWN AND SHUT UP! You're in timeout! 💥",
@@ -16,14 +17,8 @@ function getRandomResponse() {
   return responses[Math.floor(Math.random() * responses.length)];
 }
 
-/**
- * Parses a duration string like "10m", "2h", "1d" into milliseconds.
- * Supports: s (seconds), m (minutes), h (hours), d (days)
- * Discord max timeout is 28 days.
- */
 function parseDuration(str) {
   if (!str) return null;
-
   const match = str.match(/^(\d+)\s*(s|sec|m|min|h|hr|d|day)s?$/i);
   if (!match) return null;
 
@@ -39,10 +34,7 @@ function parseDuration(str) {
 
   const ms = val * (multipliers[unit] || 0);
   if (ms <= 0) return null;
-
-  const maxMs = 28 * 86_400_000;
-  if (ms > maxMs) return null;
-
+  if (ms > 28 * 86_400_000) return null;
   return ms;
 }
 
@@ -84,8 +76,12 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers),
 
   async execute({ message, args }) {
-    const target = message.mentions.members.first();
-    if (!target) return message.reply("Tch. Mention someone to timeout, idiot.");
+    const target = await resolveTarget(message.guild, args[0]);
+    if (!target) return message.reply("Tch. Give me a valid mention or user ID, idiot.");
+
+    if (target.user.id === message.author.id) {
+      return message.reply("You're trying to timeout YOURSELF? Tch. That's just sad, extra!");
+    }
 
     const durationStr = args[1];
     const ms = parseDuration(durationStr);
@@ -93,9 +89,7 @@ module.exports = {
     if (!ms) {
       return message.reply("Give me a real duration, extra! Examples: `10m`, `2h`, `1d`. Max is 28 days.");
     }
-    if (target.id === message.author.id) {
-      return message.reply("Go put yourself in time out by GETTING OFF THE INTERNET, idiot!");
-    }
+
     if (!target.moderatable) {
       return message.reply("I can't timeout that person. They're either above me or protected. Tch.");
     }
@@ -129,8 +123,9 @@ module.exports = {
     if (!target) {
       return interaction.reply({ content: "That user isn't in the server, nerd.", flags: MessageFlags.Ephemeral });
     }
-    if (target.id === interaction.user.id) {
-      return interaction.reply({ content: "You are so lucky my boss made this an Ephemeral message, extra! Go put yourself in time out by GETTING OFF THE INTERNET, idiot!", flags: MessageFlags.Ephemeral });
+
+    if (target.user.id === interaction.user.id) {
+      return interaction.reply({ content: "You're trying to timeout YOURSELF? Tch. That's just sad, extra!", flags: MessageFlags.Ephemeral });
     }
 
     const ms = parseDuration(durationStr);
