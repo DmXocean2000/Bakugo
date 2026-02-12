@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
+const createModLog = require('../../utils/createModLog');
 
 const responses = [
   "Fine. You get ONE more chance. Don't waste it!",
@@ -51,6 +52,14 @@ module.exports = {
       }
 
       await message.guild.members.unban(userId, reason);
+      await createModLog({
+        guild: message.guild,
+        target: { id: bannedUser.user.id, tag: bannedUser.user.tag },
+        moderator: { id: message.author.id, tag: message.author.tag },
+        action: 'unban',
+        reason,
+        client: message.client,
+      });
       await message.reply(`${getRandomResponse()}\n**${bannedUser.user.tag}** has been unbanned. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'unban', error: err, context: { userTag: message.author.tag, targetId: userId } });
@@ -71,6 +80,14 @@ module.exports = {
       }
 
       await interaction.guild.members.unban(userId, reason);
+      await createModLog({
+        guild: interaction.guild,
+        target: { id: bannedUser.user.id, tag: bannedUser.user.tag },
+        moderator: { id: interaction.user.id, tag: interaction.user.tag },
+        action: 'unban',
+        reason,
+        client: interaction.client,
+      });
       await interaction.reply(`${getRandomResponse()}\n**${bannedUser.user.tag}** has been unbanned. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'unban', error: err, context: { userTag: interaction.user.tag, targetId: userId } });

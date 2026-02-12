@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, PermissionFlagsBits, MessageFlags } = require('discord.js');
 const logError = require('../../utils/logError');
+const createModLog = require('../../utils/createModLog');
 
 const responses = [
   "GET OUT OF HERE, EXTRA! 💥",
@@ -45,11 +46,21 @@ module.exports = {
     if (!target.bannable) {
       return message.reply("I can't ban that person. They're either above me or protected. Tch.");
     }
-
+    if (target.id === message.author.id) {
+      return message.reply("You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!");
+    }
     const reason = args.slice(1).join(' ') || 'No reason given. Bakugo decided.';
 
     try {
       await target.ban({ reason });
+      await createModLog({
+        guild: message.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: message.author.id, tag: message.author.tag },
+        action: 'ban',
+        reason,
+        client: message.client,
+      });
       await message.reply(`${getRandomResponse()}\n**${target.user.tag}** has been banned. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'ban', error: err, context: { userTag: message.author.tag, targetTag: target.user.tag } });
@@ -64,6 +75,9 @@ module.exports = {
     if (!target) {
       return interaction.reply({ content: "That user isn't in the server, nerd.", flags: MessageFlags.Ephemeral });
     }
+    if (target.id === interaction.user.id) {
+      return interaction.reply({ content: "You are so lucky my boss made this an Ephemeral message, extra! You are trying to ban yourself right now. Good hell can I roll my eyes? I already did!", flags: MessageFlags.Ephemeral });
+    }
 
     if (!target.bannable) {
       return interaction.reply({ content: "I can't ban that person. They're either above me or protected. Tch.", flags: MessageFlags.Ephemeral });
@@ -71,6 +85,14 @@ module.exports = {
 
     try {
       await target.ban({ reason });
+      await createModLog({
+        guild: interaction.guild,
+        target: { id: target.user.id, tag: target.user.tag },
+        moderator: { id: interaction.user.id, tag: interaction.user.tag },
+        action: 'ban',
+        reason,
+        client: interaction.client,
+      });
       await interaction.reply(`${getRandomResponse()}\n**${target.user.tag}** has been banned. Reason: *${reason}*`);
     } catch (err) {
       logError({ command: 'ban', error: err, context: { userTag: interaction.user.tag, targetTag: target.user.tag } });
