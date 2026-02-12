@@ -1,13 +1,16 @@
+const isWhitelisted = require('../utils/isWhiteListed.js');
+// Inside the event callback, after the bot check:
 const logError = require('../utils/logError');
+
 const {ownerIDs} = require('../../config.js');
 const {devIDs} = require('../../config.js');
 const prefix = '!';
 
 module.exports = (client) => {
   //console.log('[DEBUG] messageCreate listener loaded.');
-
   client.on('messageCreate', async (message) => {
-    if (message.author.bot || !message.content.startsWith(prefix)) return;
+    if (!isWhitelisted(message.guild?.id)) return;
+    if (message.author.bot || !message.content.startsWith(prefix)) return; 
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();

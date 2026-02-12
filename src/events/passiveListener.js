@@ -1,3 +1,5 @@
+const isWhitelisted = require('../utils/isWhiteListed.js')
+
 const { askBakugo } = require('../utils/openai.js');
 require('dotenv').config(); // Just in case
 const { MessageFlags } = require('discord.js');
@@ -27,6 +29,7 @@ const imageRoasts = [
 
 module.exports = (client) => {
   client.on('messageCreate', async (message) => {
+    if (!isWhitelisted(message.guild?.id)) return;
     if (message.author.bot) return; // Ignore bots
     if (message.channel.id !== bakugoChannelId) return; // Only listen in the right channel
 
